@@ -57,6 +57,7 @@ export default function RootLayout({
             <nav>
               <ul className="flex space-x-6">
                 <li><a href="/" className="hover:text-blue-200">Home</a></li>
+                <li><a href="/preapproval-calculator" className="hover:text-blue-200">Preapproval</a></li>
                 <li><a href="/about" className="hover:text-blue-200">About</a></li>
                 <li><a href="/blog" className="hover:text-blue-200">Blog</a></li>
               </ul>
