@@ -141,25 +141,6 @@ export default function BlogPage() {
               </div>
             ))}
           </div>
-          
-          {/* Email signup */}
-          <div className="bg-blue-600 text-white rounded-lg shadow-lg p-8 mt-16">
-            <div className="text-center max-w-xl mx-auto">
-              <h2 className="text-2xl font-bold mb-4">Subscribe to Our Newsletter</h2>
-              <p className="mb-6">Get the latest mortgage news, tips, and resources delivered straight to your inbox.</p>
-              <div className="flex flex-col sm:flex-row gap-2">
-                <input 
-                  type="email" 
-                  placeholder="Enter your email" 
-                  className="flex-grow px-4 py-2 rounded-md text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                />
-                <button className="bg-white text-blue-600 font-bold px-6 py-2 rounded-md hover:bg-gray-100 transition">
-                  Subscribe
-                </button>
-              </div>
-              <p className="mt-4 text-sm text-blue-200">We respect your privacy. Unsubscribe at any time.</p>
-            </div>
-          </div>
         </div>
       </div>
     </main>
