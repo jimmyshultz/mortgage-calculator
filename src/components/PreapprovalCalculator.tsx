@@ -96,11 +96,11 @@ const PreapprovalCalculator = () => {
   };
 
   return (
-    <div className="max-w-4xl mx-auto p-6 bg-white rounded-lg shadow-lg">
-      <h2 className="text-2xl font-bold mb-6 text-center text-gray-800">Mortgage Preapproval Calculator</h2>
+    <div className="max-w-4xl mx-auto p-4 sm:p-6 bg-white rounded-lg shadow-lg">
+      <h2 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 text-center text-gray-800">Mortgage Preapproval Calculator</h2>
       
-      <div className="grid md:grid-cols-2 gap-6">
-        <div className="space-y-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
+        <div className="space-y-3 sm:space-y-4">
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-1">
               Annual Income (${annualIncome.toLocaleString()})
@@ -214,55 +214,55 @@ const PreapprovalCalculator = () => {
           </div>
         </div>
 
-        <div className="bg-blue-50 p-6 rounded-lg">
-          <h3 className="text-xl font-semibold mb-4 text-blue-800">Preapproval Estimate</h3>
+        <div className="bg-blue-50 p-4 sm:p-6 rounded-lg mt-4 md:mt-0">
+          <h3 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4 text-blue-800">Preapproval Estimate</h3>
           
           <div className="space-y-3">
             <div className="flex flex-col">
               <span className="text-gray-600 text-sm">Estimated Maximum Loan Amount</span>
-              <span className="text-3xl font-bold text-blue-900">
+              <span className="text-2xl sm:text-3xl font-bold text-blue-900">
                 ${maxLoanAmount.toLocaleString(undefined, { maximumFractionDigits: 0 })}
               </span>
             </div>
             
-            <div className="flex flex-col mt-4">
+            <div className="flex flex-col mt-3 sm:mt-4">
               <span className="text-gray-600 text-sm">Estimated Home Price You Can Afford</span>
-              <span className="text-3xl font-bold text-blue-900">
+              <span className="text-2xl sm:text-3xl font-bold text-blue-900">
                 ${maxHomePrice.toLocaleString(undefined, { maximumFractionDigits: 0 })}
               </span>
             </div>
             
-            <div className="mt-6 space-y-2">
+            <div className="mt-4 sm:mt-6 space-y-2">
               <div className="flex justify-between">
-                <span className="text-gray-600">Estimated Monthly Payment</span>
+                <span className="text-gray-600 text-sm sm:text-base">Estimated Monthly Payment</span>
                 <span className="font-medium">
                   ${monthlyPayment.toLocaleString(undefined, { maximumFractionDigits: 0 })}
                 </span>
               </div>
               
               <div className="flex justify-between">
-                <span className="text-gray-600">Housing-to-Income Ratio</span>
+                <span className="text-gray-600 text-sm sm:text-base">Housing-to-Income Ratio</span>
                 <span className="font-medium">
                   {frontEndRatio.toFixed(1)}%
                 </span>
               </div>
               
               <div className="flex justify-between">
-                <span className="text-gray-600">Debt-to-Income Ratio</span>
+                <span className="text-gray-600 text-sm sm:text-base">Debt-to-Income Ratio</span>
                 <span className="font-medium">
                   {backEndRatio.toFixed(1)}%
                 </span>
               </div>
               
               <div className="flex justify-between">
-                <span className="text-gray-600">Down Payment</span>
+                <span className="text-gray-600 text-sm sm:text-base">Down Payment</span>
                 <span className="font-medium">
                   ${downPayment.toLocaleString()}
                 </span>
               </div>
               
               <div className="flex justify-between">
-                <span className="text-gray-600">Down Payment Percentage</span>
+                <span className="text-gray-600 text-sm sm:text-base">Down Payment Percentage</span>
                 <span className="font-medium">
                   {maxHomePrice > 0 ? ((downPayment / maxHomePrice) * 100).toFixed(1) : "0"}%
                 </span>
@@ -270,8 +270,8 @@ const PreapprovalCalculator = () => {
             </div>
           </div>
           
-          <div className="mt-6 pt-4 border-t border-blue-200">
-            <p className="text-sm text-gray-600 italic">
+          <div className="mt-4 sm:mt-6 pt-3 sm:pt-4 border-t border-blue-200">
+            <p className="text-xs sm:text-sm text-gray-600 italic">
               This is an estimate only. Actual preapproval amounts depend on lender criteria, your credit history, and other factors.
             </p>
           </div>

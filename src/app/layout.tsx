@@ -2,6 +2,7 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import Script from 'next/script'
+import MobileNavigation from '../components/MobileNavigation'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -54,7 +55,9 @@ export default function RootLayout({
         <header className="bg-blue-900 text-white py-4">
           <div className="container mx-auto px-4 flex justify-between items-center">
             <div className="text-2xl font-bold">MortgageCalc.io</div>
-            <nav>
+            
+            {/* Desktop Navigation - Hidden on mobile */}
+            <nav className="hidden md:block">
               <ul className="flex space-x-6">
                 <li><a href="/" className="hover:text-blue-200">Home</a></li>
                 <li><a href="/preapproval-calculator" className="hover:text-blue-200">Preapproval</a></li>
@@ -62,6 +65,9 @@ export default function RootLayout({
                 <li><a href="/blog" className="hover:text-blue-200">Blog</a></li>
               </ul>
             </nav>
+            
+            {/* Mobile Navigation Component */}
+            <MobileNavigation />
           </div>
         </header>
         
