@@ -3,7 +3,7 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Current Housing Market Trends and Predictions | MortgageCalc.io',
+  title: 'Current Housing Market Trends and Predictions | TheMortgageEstimator.com',
   description: 'Analysis of today\'s housing market conditions and expert predictions on where the market is heading for potential homebuyers and sellers.',
   keywords: 'housing market trends, real estate market analysis, housing market predictions, home buying market, real estate forecast',
 };

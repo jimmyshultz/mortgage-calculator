@@ -3,7 +3,7 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Complete Guide for First-Time Homebuyers | MortgageCalc.io',
+  title: 'Complete Guide for First-Time Homebuyers | TheMortgageEstimator.com',
   description: 'Everything first-time homebuyers need to know about mortgages, from pre-approval to closing. Learn about financing options, house hunting, and more.',
   keywords: 'first-time homebuyer, mortgage guide, home buying process, mortgage pre-approval, house hunting tips',
 };

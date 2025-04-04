@@ -3,7 +3,7 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: '5 Strategies to Improve Your Credit Score Before Applying for a Mortgage | MortgageCalc.io',
+  title: '5 Strategies to Improve Your Credit Score Before Applying for a Mortgage | TheMortgageEstimator.com',
   description: 'Learn effective strategies to boost your credit score before applying for a mortgage to qualify for better interest rates and loan terms.',
   keywords: 'credit score improvement, mortgage application, better interest rates, credit repair, mortgage qualification',
 };

@@ -2,9 +2,9 @@ import React from 'react';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'About MortgageCalc.io - Our Mission and Purpose',
-  description: 'Learn about MortgageCalc.io, a free mortgage calculator designed to help homebuyers make informed financing decisions.',
-  keywords: 'about mortgage calculator, mortgage calc.io, mortgage tools, home loan calculator',
+  title: 'About TheMortgageEstimator.com - Our Mission and Purpose',
+  description: 'Learn about TheMortgageEstimator.com, a free mortgage calculator designed to help homebuyers make informed financing decisions.',
+  keywords: 'about mortgage calculator, mortgage estimator, mortgage tools, home loan calculator',
 };
 
 export default function AboutPage() {
@@ -12,7 +12,7 @@ export default function AboutPage() {
     <main className="min-h-screen bg-gray-50 py-12">
       <div className="container mx-auto px-4">
         <h1 className="text-4xl font-bold text-center mb-2 text-gray-800">
-          About MortgageCalc.io
+          About TheMortgageEstimator.com
         </h1>
         <p className="text-center text-gray-600 mb-10 max-w-2xl mx-auto">
           Helping homebuyers and homeowners make informed financial decisions.
@@ -22,7 +22,7 @@ export default function AboutPage() {
           <div className="bg-white rounded-lg shadow-md p-8 mb-8">
             <h2 className="text-2xl font-bold mb-6 text-gray-800">Our Mission</h2>
             <p className="text-gray-600 mb-6 leading-relaxed">
-              At MortgageCalc.io, we believe that everyone deserves access to clear, accurate financial information when making one of life's biggest financial decisions: buying a home. Our mission is to provide free, easy-to-use mortgage calculation tools that help you understand the full picture of your home financing options.
+              At TheMortgageEstimator.com, we believe that everyone deserves access to clear, accurate financial information when making one of life's biggest financial decisions: buying a home. Our mission is to provide free, easy-to-use mortgage calculation tools that help you understand the full picture of your home financing options.
             </p>
             <p className="text-gray-600 mb-6 leading-relaxed">
               We've created this platform to demystify the mortgage process and empower you to make choices that align with your financial goals and circumstances.
@@ -54,7 +54,7 @@ export default function AboutPage() {
           <div className="bg-white rounded-lg shadow-md p-8">
             <h2 className="text-2xl font-bold mb-6 text-gray-800">Our Story</h2>
             <p className="text-gray-600 mb-6 leading-relaxed">
-              MortgageCalc.io was founded in 2023 by a team of financial experts and web developers who recognized the need for better, more accessible mortgage calculation tools. After witnessing friends and family members struggle to understand their mortgage options, we set out to create a platform that would make this information available to everyone, free of charge.
+              TheMortgageEstimator.com was founded in 2023 by a team of financial experts and web developers who recognized the need for better, more accessible mortgage calculation tools. After witnessing friends and family members struggle to understand their mortgage options, we set out to create a platform that would make this information available to everyone, free of charge.
             </p>
             <p className="text-gray-600 mb-6 leading-relaxed">
               Today, we're proud to help thousands of users each month better understand their mortgage options and make more informed decisions about their home financing.
@@ -66,7 +66,7 @@ export default function AboutPage() {
                 We're always looking to improve our calculator and resources. If you have suggestions or feedback, we'd love to hear from you!
               </p>
               <p className="text-gray-700">
-                Email us at: <a href="mailto:contact@mortgagecalc.io" className="text-blue-600 hover:underline">contact@mortgagecalc.io</a>
+                Email us at: <a href="mailto:contact@themortgageestimator.com" className="text-blue-600 hover:underline">contact@themortgageestimator.com</a>
               </p>
             </div>
           </div>

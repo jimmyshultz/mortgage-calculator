@@ -3,8 +3,8 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Disclaimer | MortgageCalc.io',
-  description: 'Important disclaimer information regarding the use of MortgageCalc.io mortgage calculator and website.',
+  title: 'Disclaimer | TheMortgageEstimator.com',
+  description: 'Important disclaimer information regarding the use of TheMortgageEstimator.com mortgage calculator and website.',
   keywords: 'disclaimer, mortgage calculator disclaimer, financial information disclaimer',
 };
 
@@ -25,12 +25,12 @@ export default function DisclaimerPage() {
             <div className="prose prose-lg max-w-none">
               <h2>General Disclaimer</h2>
               <p>
-                The information provided on MortgageCalc.io is for general informational and educational purposes only. All information on the site is provided in good faith, however, we make no representation or warranty of any kind, express or implied, regarding the accuracy, adequacy, validity, reliability, availability, or completeness of any information on the website.
+                The information provided on TheMortgageEstimator.com is for general informational and educational purposes only. All information on the site is provided in good faith, however, we make no representation or warranty of any kind, express or implied, regarding the accuracy, adequacy, validity, reliability, availability, or completeness of any information on the website.
               </p>
               
               <h2>Not Financial Advice</h2>
               <p>
-                The content on MortgageCalc.io should not be construed as professional financial advice. The calculators and tools provided on this website are designed to give general estimates and to help users understand mortgage concepts. They are not intended to replace professional financial advice.
+                The content on TheMortgageEstimator.com should not be construed as professional financial advice. The calculators and tools provided on this website are designed to give general estimates and to help users understand mortgage concepts. They are not intended to replace professional financial advice.
               </p>
               <p>
                 Before making any financial decision, especially one as significant as taking on a mortgage, we strongly recommend consulting with a qualified financial advisor, mortgage broker, or lending institution. Your personal financial situation is unique, and the tools and information on this website are not tailored to individual circumstances.
@@ -55,22 +55,22 @@ export default function DisclaimerPage() {
               
               <h2>Third-Party Information</h2>
               <p>
-                MortgageCalc.io may include links to third-party websites, articles, or other content. We do not control or monitor the content of these external sources and are not responsible for their accuracy or reliability. Inclusion of links to third-party content does not imply endorsement or verification by MortgageCalc.io.
+                TheMortgageEstimator.com may include links to third-party websites, articles, or other content. We do not control or monitor the content of these external sources and are not responsible for their accuracy or reliability. Inclusion of links to third-party content does not imply endorsement or verification by TheMortgageEstimator.com.
               </p>
               
               <h2>No Lender Relationships</h2>
               <p>
-                MortgageCalc.io is not a mortgage lender, broker, or financial institution. We do not offer mortgages or other financial products. While we may display information about various mortgage products or trends, we do not endorse specific lenders, products, or services. Any decision to engage with a particular lender or financial institution should be made based on your own research and assessment.
+                TheMortgageEstimator.com is not a mortgage lender, broker, or financial institution. We do not offer mortgages or other financial products. While we may display information about various mortgage products or trends, we do not endorse specific lenders, products, or services. Any decision to engage with a particular lender or financial institution should be made based on your own research and assessment.
               </p>
               
               <h2>Changes to Market Conditions</h2>
               <p>
-                The mortgage market and interest rates can change rapidly. Information on MortgageCalc.io may not reflect the most current market conditions. Always verify current rates and terms with actual lenders before making decisions.
+                The mortgage market and interest rates can change rapidly. Information on TheMortgageEstimator.com may not reflect the most current market conditions. Always verify current rates and terms with actual lenders before making decisions.
               </p>
               
               <h2>Limitation of Liability</h2>
               <p>
-                Under no circumstances shall MortgageCalc.io, its owners, employees, or affiliates be liable for any direct, indirect, incidental, consequential, special, or exemplary damages arising from:
+                Under no circumstances shall TheMortgageEstimator.com, its owners, employees, or affiliates be liable for any direct, indirect, incidental, consequential, special, or exemplary damages arising from:
               </p>
               <ul>
                 <li>Your use of, or inability to use, our website or tools</li>
@@ -79,7 +79,7 @@ export default function DisclaimerPage() {
                 <li>Any financial loss or damages resulting from the use of our website</li>
               </ul>
               <p>
-                By using MortgageCalc.io, you expressly agree that your use of the website and reliance on any information is solely at your own risk.
+                By using TheMortgageEstimator.com, you expressly agree that your use of the website and reliance on any information is solely at your own risk.
               </p>
               
               <h2>Contact Information</h2>

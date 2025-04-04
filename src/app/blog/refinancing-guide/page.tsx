@@ -3,7 +3,7 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'The Complete Guide to Refinancing Your Home | MortgageCalc.io',
+  title: 'The Complete Guide to Refinancing Your Home | TheMortgageEstimator.com',
   description: 'Learn when and how to refinance your mortgage to save money or access home equity. Understand the process, costs, and benefits of refinancing.',
   keywords: 'mortgage refinancing, home refinance, refinance guide, cash-out refinance, refinance process, refinance costs',
 };

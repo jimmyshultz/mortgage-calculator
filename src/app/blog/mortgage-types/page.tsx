@@ -3,7 +3,7 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Understanding Different Types of Mortgages | MortgageCalc.io',
+  title: 'Understanding Different Types of Mortgages | TheMortgageEstimator.com',
   description: 'Compare fixed-rate, adjustable-rate, FHA, VA, and other mortgage types to find the best option for your home purchase.',
   keywords: 'mortgage types, fixed-rate mortgage, adjustable-rate mortgage, FHA loan, VA loan, USDA loan, conventional loan',
 };

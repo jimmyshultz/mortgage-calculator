@@ -54,7 +54,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <header className="bg-blue-900 text-white py-4">
           <div className="container mx-auto px-4 flex justify-between items-center">
-            <div className="text-2xl font-bold">MortgageCalc.io</div>
+            <div className="text-2xl font-bold">TheMortgageEstimator.com</div>
             
             {/* Desktop Navigation - Hidden on mobile */}
             <nav className="hidden md:block">
@@ -77,7 +77,7 @@ export default function RootLayout({
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
               <div className="text-center">
-                <h3 className="text-xl font-bold mb-4">MortgageCalc.io</h3>
+                <h3 className="text-xl font-bold mb-4">TheMortgageEstimator.com</h3>
                 <p className="text-gray-300">
                   Helping you make informed decisions about your mortgage and home financing options.
                 </p>
@@ -100,7 +100,7 @@ export default function RootLayout({
               </div>
             </div>
             <div className="mt-8 pt-6 border-t border-gray-700 text-center text-gray-400">
-              <p>© {new Date().getFullYear()} MortgageCalc.io. All rights reserved.</p>
+              <p>© {new Date().getFullYear()} TheMortgageEstimator.com. All rights reserved.</p>
               <p className="mt-2 text-sm">
                 This calculator is for informational purposes only. Consult with a financial advisor before making any financial decisions.
               </p>

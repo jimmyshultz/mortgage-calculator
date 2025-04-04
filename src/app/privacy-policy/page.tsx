@@ -3,8 +3,8 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy | MortgageCalc.io',
-  description: 'Our privacy policy explains how we collect, use, and protect your personal information when you use MortgageCalc.io.',
+  title: 'Privacy Policy | TheMortgageEstimator.com',
+  description: 'Our privacy policy explains how we collect, use, and protect your personal information when you use TheMortgageEstimator.com.',
   keywords: 'privacy policy, data protection, mortgage calculator privacy',
 };
 
@@ -25,7 +25,7 @@ export default function PrivacyPolicyPage() {
             <div className="prose prose-lg max-w-none">
               <h2>Introduction</h2>
               <p>
-                MortgageCalc.io ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website, including any other media form, media channel, mobile website, or mobile application related or connected to MortgageCalc.io.
+                TheMortgageEstimator.com ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website, including any other media form, media channel, mobile website, or mobile application related or connected to TheMortgageEstimator.com.
               </p>
               <p>
                 Please read this Privacy Policy carefully. If you do not agree with the terms of this Privacy Policy, please do not access the site.

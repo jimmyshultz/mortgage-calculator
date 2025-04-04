@@ -3,8 +3,8 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Terms of Service | MortgageCalc.io',
-  description: 'Our terms of service outline the rules, guidelines, and legal terms that govern your use of MortgageCalc.io.',
+  title: 'Terms of Service | TheMortgageEstimator.com',
+  description: 'Our terms of service outline the rules, guidelines, and legal terms that govern your use of TheMortgageEstimator.com.',
   keywords: 'terms of service, terms and conditions, legal terms, mortgage calculator terms',
 };
 
@@ -25,7 +25,7 @@ export default function TermsOfServicePage() {
             <div className="prose prose-lg max-w-none">
               <h2>1. Acceptance of Terms</h2>
               <p>
-                Welcome to MortgageCalc.io. These Terms of Service ("Terms") govern your access to and use of the MortgageCalc.io website and all services provided through it (collectively, the "Service"). By accessing or using the Service, you agree to be bound by these Terms. If you do not agree to these Terms, you may not access or use the Service.
+                Welcome to TheMortgageEstimator.com. These Terms of Service ("Terms") govern your access to and use of the TheMortgageEstimator.com website and all services provided through it (collectively, the "Service"). By accessing or using the Service, you agree to be bound by these Terms. If you do not agree to these Terms, you may not access or use the Service.
               </p>
               
               <h2>2. Modifications to Terms</h2>
@@ -35,7 +35,7 @@ export default function TermsOfServicePage() {
               
               <h2>3. Using Our Service</h2>
               <p>
-                MortgageCalc.io provides a mortgage calculator and related tools to help users estimate mortgage payments, interest, and other loan-related calculations. All calculations are estimates only and should not be relied upon as financial advice.
+                TheMortgageEstimator.com provides a mortgage calculator and related tools to help users estimate mortgage payments, interest, and other loan-related calculations. All calculations are estimates only and should not be relied upon as financial advice.
               </p>
               
               <h2>4. Accuracy of Information</h2>
@@ -56,7 +56,7 @@ export default function TermsOfServicePage() {
               
               <h2>6. Limitation of Liability</h2>
               <p>
-                TO THE MAXIMUM EXTENT PERMITTED BY LAW, IN NO EVENT SHALL MORTGAGECALC.IO, ITS AFFILIATES, OFFICERS, DIRECTORS, EMPLOYEES, OR AGENTS BE LIABLE FOR ANY INDIRECT, PUNITIVE, INCIDENTAL, SPECIAL, OR CONSEQUENTIAL DAMAGES, OR ANY DAMAGES WHATSOEVER, INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF PROFITS, GOODWILL, USE, DATA, OR OTHER INTANGIBLE LOSSES, RESULTING FROM:
+                TO THE MAXIMUM EXTENT PERMITTED BY LAW, IN NO EVENT SHALL MORTGAGEESTIMATOR.COM, ITS AFFILIATES, OFFICERS, DIRECTORS, EMPLOYEES, OR AGENTS BE LIABLE FOR ANY INDIRECT, PUNITIVE, INCIDENTAL, SPECIAL, OR CONSEQUENTIAL DAMAGES, OR ANY DAMAGES WHATSOEVER, INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF PROFITS, GOODWILL, USE, DATA, OR OTHER INTANGIBLE LOSSES, RESULTING FROM:
               </p>
               <ul>
                 <li>THE USE OR INABILITY TO USE THE SERVICE</li>
@@ -68,7 +68,7 @@ export default function TermsOfServicePage() {
               
               <h2>7. Intellectual Property Rights</h2>
               <p>
-                The Service and its content, features, and functionality are owned by MortgageCalc.io and are protected by copyright, trademark, and other intellectual property laws. You may not copy, modify, distribute, sell, or lease any part of our Service without our express written permission.
+                The Service and its content, features, and functionality are owned by TheMortgageEstimator.com and are protected by copyright, trademark, and other intellectual property laws. You may not copy, modify, distribute, sell, or lease any part of our Service without our express written permission.
               </p>
               
               <h2>8. User Conduct</h2>
@@ -86,7 +86,7 @@ export default function TermsOfServicePage() {
               
               <h2>9. Links to Third-Party Websites</h2>
               <p>
-                Our Service may contain links to third-party websites or services that are not owned or controlled by MortgageCalc.io. We have no control over, and assume no responsibility for, the content, privacy policies, or practices of any third-party websites or services. You acknowledge and agree that we shall not be responsible or liable for any damage or loss caused by your use of any such websites or services.
+                Our Service may contain links to third-party websites or services that are not owned or controlled by TheMortgageEstimator.com. We have no control over, and assume no responsibility for, the content, privacy policies, or practices of any third-party websites or services. You acknowledge and agree that we shall not be responsible or liable for any damage or loss caused by your use of any such websites or services.
               </p>
               
               <h2>10. Governing Law</h2>
@@ -101,7 +101,7 @@ export default function TermsOfServicePage() {
               
               <h2>12. Entire Agreement</h2>
               <p>
-                These Terms constitute the entire agreement between you and MortgageCalc.io regarding your use of the Service, superseding any prior agreements between you and MortgageCalc.io.
+                These Terms constitute the entire agreement between you and TheMortgageEstimator.com regarding your use of the Service, superseding any prior agreements between you and TheMortgageEstimator.com.
               </p>
               
               <h2>13. Contact Information</h2>

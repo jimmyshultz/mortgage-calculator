@@ -3,7 +3,7 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Down Payment Options: How Much Should You Put Down? | MortgageCalc.io',
+  title: 'Down Payment Options: How Much Should You Put Down? | TheMortgageEstimator.com',
   description: 'Explore different down payment options for your mortgage, from no-down-payment loans to the traditional 20%. Learn the pros and cons of each approach.',
   keywords: 'down payment options, mortgage down payment, 20 percent down, low down payment, down payment assistance, no down payment mortgage',
 };
