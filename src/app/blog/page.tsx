@@ -62,7 +62,7 @@ const blogPosts = [
 
 export default function BlogPage() {
   return (
-    <main className="min-h-screen bg-gray-50 py-12">
+    <main id="main-content" className="min-h-screen bg-gray-50 py-12">
       <div className="container mx-auto px-4">
         <h1 className="text-4xl font-bold text-center mb-2 text-gray-800">
           Mortgage Blog

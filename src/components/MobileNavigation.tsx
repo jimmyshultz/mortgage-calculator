@@ -1,109 +1,91 @@
 "use client";
 
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState } from 'react';
+import Link from 'next/link';
 
-const MobileNavigation = () => {
+const MobileNavigation: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const menuRef = useRef<HTMLDivElement>(null);
 
-  // Close menu when clicking outside
-  useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
-      if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
-        setIsOpen(false);
-      }
-    };
-
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, [menuRef]);
-
-  // Close menu when pressing escape key
-  useEffect(() => {
-    const handleEscKey = (event: KeyboardEvent) => {
-      if (event.key === 'Escape') {
-        setIsOpen(false);
-      }
-    };
-
-    if (isOpen) {
-      document.addEventListener('keydown', handleEscKey);
-    }
-
-    return () => {
-      document.removeEventListener('keydown', handleEscKey);
-    };
-  }, [isOpen]);
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
 
   return (
-    <div className="md:hidden" ref={menuRef}>
-      {/* Hamburger Button */}
-      <button 
-        onClick={() => setIsOpen(!isOpen)}
-        className="flex flex-col justify-center items-center w-10 h-10 border-none focus:outline-none"
-        aria-label="Toggle menu"
+    <div className="md:hidden">
+      {/* Hamburger button with accessibility attributes */}
+      <button
+        type="button"
+        onClick={toggleMenu}
+        className="text-white focus:outline-none focus:ring-2 focus:ring-blue-300 rounded-md p-2"
         aria-expanded={isOpen}
+        aria-controls="mobile-menu"
+        aria-label={isOpen ? "Close menu" : "Open menu"}
       >
-        <span className={`block w-6 h-0.5 bg-white rounded transition-all duration-300 ease-out ${isOpen ? 'rotate-45 translate-y-1.5' : 'mb-1.5'}`}></span>
-        <span className={`block w-6 h-0.5 bg-white rounded transition-all duration-300 ease-out ${isOpen ? 'opacity-0' : 'mb-1.5'}`}></span>
-        <span className={`block w-6 h-0.5 bg-white rounded transition-all duration-300 ease-out ${isOpen ? '-rotate-45 -translate-y-1.5' : ''}`}></span>
+        <span className="sr-only">{isOpen ? "Close menu" : "Open menu"}</span>
+        <svg
+          className="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          aria-hidden="true"
+        >
+          {isOpen ? (
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M6 18L18 6M6 6l12 12"
+            />
+          ) : (
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          )}
+        </svg>
       </button>
 
-      {/* Mobile Menu */}
-      <div 
-        className={`absolute top-16 right-0 left-0 bg-blue-900 shadow-lg transition-transform duration-300 ease-in-out z-50 ${isOpen ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0 pointer-events-none'}`}
-      >
-        <nav className="container mx-auto px-4 py-4">
-          <ul className="space-y-4">
-            <li>
-              <a 
-                href="/" 
-                className="block py-2 px-4 text-white hover:bg-blue-800 rounded transition-colors"
-                onClick={() => setIsOpen(false)}
-              >
-                Home
-              </a>
-            </li>
-            <li>
-              <a 
-                href="/preapproval-calculator" 
-                className="block py-2 px-4 text-white hover:bg-blue-800 rounded transition-colors"
-                onClick={() => setIsOpen(false)}
-              >
-                Preapproval Calculator
-              </a>
-            </li>
-            <li>
-              <a 
-                href="/about" 
-                className="block py-2 px-4 text-white hover:bg-blue-800 rounded transition-colors"
-                onClick={() => setIsOpen(false)}
-              >
-                About
-              </a>
-            </li>
-            <li>
-              <a 
-                href="/blog" 
-                className="block py-2 px-4 text-white hover:bg-blue-800 rounded transition-colors"
-                onClick={() => setIsOpen(false)}
-              >
-                Blog
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-
-      {/* Overlay when menu is open */}
+      {/* Mobile menu with accessibility attributes */}
       {isOpen && (
-        <div 
-          className="fixed inset-0 bg-black bg-opacity-50 z-40" 
-          onClick={() => setIsOpen(false)}
-          aria-hidden="true"
-        />
+        <div
+          id="mobile-menu"
+          className="absolute left-0 right-0 top-16 bg-blue-800 z-50 shadow-md"
+          role="navigation"
+          aria-label="Mobile navigation"
+        >
+          <div className="px-2 pt-2 pb-3 space-y-1">
+            <Link
+              href="/"
+              className="text-white block px-3 py-2 rounded-md text-base font-medium hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-300"
+              onClick={toggleMenu}
+            >
+              Home
+            </Link>
+            <Link
+              href="/preapproval-calculator"
+              className="text-white block px-3 py-2 rounded-md text-base font-medium hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-300"
+              onClick={toggleMenu}
+            >
+              Preapproval
+            </Link>
+            <Link
+              href="/about"
+              className="text-white block px-3 py-2 rounded-md text-base font-medium hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-300"
+              onClick={toggleMenu}
+            >
+              About
+            </Link>
+            <Link
+              href="/blog"
+              className="text-white block px-3 py-2 rounded-md text-base font-medium hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-300"
+              onClick={toggleMenu}
+            >
+              Blog
+            </Link>
+          </div>
+        </div>
       )}
     </div>
   );

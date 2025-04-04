@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 export default function PrivacyPolicyPage() {
   return (
-    <main className="min-h-screen bg-gray-50 py-12">
+    <main id="main-content" className="min-h-screen bg-gray-50 py-12">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl font-bold text-center mb-8 text-gray-800">
@@ -66,6 +66,38 @@ export default function PrivacyPolicyPage() {
                 <li><strong>Advertising Partners:</strong> We work with third-party advertising companies to display ads on our website. These companies may use cookies to collect information about your visits to provide relevant advertisements.</li>
                 <li><strong>Legal Requirements:</strong> We may disclose your information if required to do so by law or in response to valid requests by public authorities.</li>
               </ul>
+              
+              <h2>Advertising</h2>
+              <p>
+                This website displays advertisements served by Google AdSense, a third-party advertising network. Google AdSense may use cookies, web beacons, and similar technologies to collect information about your activities on this and other websites to provide you with targeted advertising based on your browsing activities and interests.
+              </p>
+              <p>
+                Google's use of advertising cookies enables it and its partners to serve ads to you based on your visit to our site and/or other sites on the Internet. You may opt out of personalized advertising by visiting <a href="https://www.google.com/settings/ads" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer" aria-label="Google Ads Settings (opens in a new window)">Google Ads Settings</a> or by visiting <a href="https://www.aboutads.info" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer" aria-label="About Ads info page (opens in a new window)">AboutAds.info</a>.
+              </p>
+              <p>
+                Please note that if you opt out of personalized advertising, you will still see advertisements on our website, but they may not be as relevant to your interests.
+              </p>
+              
+              <h2>Cookies and Similar Technologies</h2>
+              <p>
+                Our website uses cookies and similar tracking technologies to collect information about your browsing behavior. A cookie is a small text file that is stored on your device when you visit a website. We use the following types of cookies:
+              </p>
+              <ul>
+                <li><strong>Essential Cookies:</strong> These cookies are necessary for the website to function properly.</li>
+                <li><strong>Analytics Cookies:</strong> We use Google Analytics to help us understand how visitors interact with our website. These cookies collect information about your use of the website, including the pages you visit and links you click.</li>
+                <li><strong>Advertising Cookies:</strong> Google AdSense uses cookies to make advertising more engaging to users and more valuable to publishers and advertisers. These cookies are used to remember your most recent searches, your previous interactions with an advertiser's ads or search results, and your visits to an advertiser's website.</li>
+              </ul>
+              <p>
+                You can control and manage cookies in various ways. Most web browsers allow you to manage your cookie preferences. You can:
+              </p>
+              <ul>
+                <li>Delete cookies from your device</li>
+                <li>Block cookies by activating the setting on your browser that allows you to refuse all or some cookies</li>
+                <li>Set your browser to notify you when you receive a cookie</li>
+              </ul>
+              <p>
+                Please note that if you choose to block or delete cookies, you may not be able to access certain areas or features of our website, and some services may not function properly.
+              </p>
               
               <h2>Your Choices</h2>
               <p>

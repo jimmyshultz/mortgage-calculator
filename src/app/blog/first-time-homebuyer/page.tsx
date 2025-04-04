@@ -10,12 +10,18 @@ export const metadata: Metadata = {
 
 export default function FirstTimeHomebuyerGuide() {
   return (
-    <main className="min-h-screen bg-gray-50 py-8 sm:py-12">
+    <main id="main-content" className="min-h-screen bg-gray-50 py-8 sm:py-12">
       <div className="container mx-auto px-4">
         {/* Breadcrumb Navigation */}
-        <div className="text-sm mb-6 text-gray-500">
-          <Link href="/" className="hover:text-blue-600">Home</Link> &gt; <Link href="/blog" className="hover:text-blue-600">Blog</Link> &gt; <span className="text-gray-700">First-Time Homebuyer Guide</span>
-        </div>
+        <nav aria-label="Breadcrumb" className="text-sm mb-6 text-gray-500">
+          <ol className="flex">
+            <li><Link href="/" className="hover:text-blue-600">Home</Link></li>
+            <li><span className="mx-2" aria-hidden="true">&gt;</span></li>
+            <li><Link href="/blog" className="hover:text-blue-600">Blog</Link></li>
+            <li><span className="mx-2" aria-hidden="true">&gt;</span></li>
+            <li><span className="text-gray-700" aria-current="page">First-Time Homebuyer Guide</span></li>
+          </ol>
+        </nav>
         
         <article className="bg-white rounded-lg shadow-md p-4 sm:p-8 max-w-4xl mx-auto">
           {/* Article Header */}

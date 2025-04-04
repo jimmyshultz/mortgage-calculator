@@ -10,6 +10,10 @@ export const metadata: Metadata = {
   title: 'Mortgage Calculator - Plan Your Home Financing',
   description: 'Free online mortgage calculator to help plan your home financing. Calculate monthly payments and see amortization schedules.',
   keywords: 'mortgage calculator, home loan calculator, mortgage payment, home financing',
+  verification: {
+    // Replace with the actual verification code when provided by Google
+    google: 'google-site-verification=YOUR_VERIFICATION_CODE',
+  },
 }
 
 export default function RootLayout({
@@ -20,21 +24,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* Google AdSense Auto Ads Script */}
+        {/* Google AdSense Script - Will be updated with actual ID when available */}
         <Script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-YOUR_ADSENSE_ID"
           strategy="afterInteractive"
           crossOrigin="anonymous"
         />
-        <Script id="adsense-init" strategy="afterInteractive">
-          {`
-            (adsbygoogle = window.adsbygoogle || []).push({
-              google_ad_client: "ca-pub-YOUR_ADSENSE_ID",
-              enable_page_level_ads: true
-            });
-          `}
-        </Script>
         
         {/* Google Analytics */}
         <Script
@@ -52,6 +48,14 @@ export default function RootLayout({
         </Script>
       </head>
       <body className={inter.className}>
+        {/* Skip to content link for accessibility */}
+        <a 
+          href="#main-content" 
+          className="absolute z-50 opacity-0 focus:opacity-100 bg-white text-blue-600 p-3 m-3 transition-opacity focus:outline-none focus:ring-2 focus:ring-blue-500 rounded"
+        >
+          Skip to main content
+        </a>
+        
         <header className="bg-blue-900 text-white py-4">
           <div className="container mx-auto px-4 flex justify-between items-center">
             <div className="text-2xl font-bold">TheMortgageEstimator.com</div>
