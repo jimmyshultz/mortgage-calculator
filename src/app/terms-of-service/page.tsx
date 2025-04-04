@@ -19,7 +19,7 @@ export default function TermsOfServicePage() {
           
           <div className="bg-white p-8 rounded-lg shadow-md">
             <p className="text-gray-600 mb-8">
-              Last Updated: March 1, 2023
+              Last Updated: April 1, 2025
             </p>
             
             <div className="prose prose-lg max-w-none">
@@ -106,12 +106,7 @@ export default function TermsOfServicePage() {
               
               <h2>13. Contact Information</h2>
               <p>
-                If you have any questions about these Terms, please contact us at:
-              </p>
-              <p>
-                Email: legal@mortgagecalc.io<br />
-                Address: 123 Financial Street, Suite 400<br />
-                New York, NY 10001
+                If you have any questions about these Terms, please contact us.
               </p>
             </div>
             
