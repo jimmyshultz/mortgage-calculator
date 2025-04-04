@@ -1,36 +1,87 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# TheMortgageEstimator.com
 
-## Getting Started
+A powerful mortgage calculator that helps users estimate their monthly payments, total interest, and make informed decisions about their home financing options.
 
-First, run the development server:
+## Features
 
+- Home loan calculator with adjustable parameters
+- Preapproval calculator to estimate how much you can borrow
+- Educational resources about mortgages
+- Blog with helpful articles for homebuyers
+- Responsive design for all devices
+- Accessibility features for all users
+
+## Development
+
+### Prerequisites
+
+- Node.js 20.x or later
+- npm 10.x or later
+
+### Installation
+
+1. Clone the repository
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/your-username/mortgage-calculator.git
+cd mortgage-calculator
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Start the development server
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Open your browser and visit http://localhost:3000
 
-## Learn More
+## Deployment with Vercel and GitHub Actions
 
-To learn more about Next.js, take a look at the following resources:
+This project is configured to automatically deploy to Vercel using GitHub Actions whenever changes are pushed to the main branch.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Setting up Vercel Deployment
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Create a Vercel account at https://vercel.com if you don't have one already
 
-## Deploy on Vercel
+2. Install Vercel CLI locally
+```bash
+npm install -g vercel
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. Link your project to Vercel
+```bash
+vercel login
+vercel link
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+4. Get the required Vercel tokens and IDs
+```bash
+vercel env pull .env.local
+```
+The Vercel project will generate values for `VERCEL_ORG_ID` and `VERCEL_PROJECT_ID`
+
+5. In your GitHub repository, go to Settings → Secrets → Actions and add the following secrets:
+   - `VERCEL_TOKEN`: Your Vercel personal token (create one at https://vercel.com/account/tokens)
+   - `VERCEL_ORG_ID`: Your Vercel organization ID
+   - `VERCEL_PROJECT_ID`: Your Vercel project ID
+
+6. Push changes to the main branch or manually trigger the workflow in GitHub Actions
+
+### How It Works
+
+The GitHub Actions workflow:
+1. Checks out the code
+2. Sets up Node.js
+3. Installs dependencies
+4. Runs linting checks
+5. Installs Vercel CLI
+6. Pulls environment information from Vercel
+7. Builds the project
+8. Deploys to Vercel
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
