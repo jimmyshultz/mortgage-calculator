@@ -26,10 +26,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* Google AdSense Script - Will be updated with actual ID when available */}
+        {/* Google AdSense Script */}
         <Script
           async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-YOUR_ADSENSE_ID"
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5443760017915120"
           strategy="afterInteractive"
           crossOrigin="anonymous"
         />
