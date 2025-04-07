@@ -2,6 +2,7 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import Script from 'next/script'
+import Link from 'next/link'
 import MobileNavigation from '../components/MobileNavigation'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -63,10 +64,10 @@ export default function RootLayout({
             {/* Desktop Navigation - Hidden on mobile */}
             <nav className="hidden md:block">
               <ul className="flex space-x-6">
-                <li><a href="/" className="hover:text-blue-200">Home</a></li>
-                <li><a href="/preapproval-calculator" className="hover:text-blue-200">Preapproval</a></li>
-                <li><a href="/about" className="hover:text-blue-200">About</a></li>
-                <li><a href="/blog" className="hover:text-blue-200">Blog</a></li>
+                <li><Link href="/" className="hover:text-blue-200">Home</Link></li>
+                <li><Link href="/preapproval-calculator" className="hover:text-blue-200">Preapproval</Link></li>
+                <li><Link href="/about" className="hover:text-blue-200">About</Link></li>
+                <li><Link href="/blog" className="hover:text-blue-200">Blog</Link></li>
               </ul>
             </nav>
             
@@ -89,17 +90,17 @@ export default function RootLayout({
               <div className="text-center">
                 <h3 className="text-xl font-bold mb-4">Resources</h3>
                 <ul className="space-y-2 text-gray-300">
-                  <li><a href="/blog/first-time-homebuyer" className="hover:text-blue-300">First-Time Homebuyer Guide</a></li>
-                  <li><a href="/blog/mortgage-types" className="hover:text-blue-300">Types of Mortgages</a></li>
-                  <li><a href="/blog/refinancing-guide" className="hover:text-blue-300">Refinancing Guide</a></li>
+                  <li><Link href="/blog/first-time-homebuyer" className="hover:text-blue-300">First-Time Homebuyer Guide</Link></li>
+                  <li><Link href="/blog/mortgage-types" className="hover:text-blue-300">Types of Mortgages</Link></li>
+                  <li><Link href="/blog/refinancing-guide" className="hover:text-blue-300">Refinancing Guide</Link></li>
                 </ul>
               </div>
               <div className="text-center">
                 <h3 className="text-xl font-bold mb-4">Legal</h3>
                 <ul className="space-y-2 text-gray-300">
-                  <li><a href="/privacy-policy" className="hover:text-blue-300">Privacy Policy</a></li>
-                  <li><a href="/terms-of-service" className="hover:text-blue-300">Terms of Service</a></li>
-                  <li><a href="/disclaimer" className="hover:text-blue-300">Disclaimer</a></li>
+                  <li><Link href="/privacy-policy" className="hover:text-blue-300">Privacy Policy</Link></li>
+                  <li><Link href="/terms-of-service" className="hover:text-blue-300">Terms of Service</Link></li>
+                  <li><Link href="/disclaimer" className="hover:text-blue-300">Disclaimer</Link></li>
                 </ul>
               </div>
             </div>

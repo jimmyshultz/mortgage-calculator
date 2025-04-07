@@ -1,10 +1,11 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Current Housing Market Trends and Predictions | TheMortgageEstimator.com',
-  description: 'Analysis of today\'s housing market conditions and expert predictions on where the market is heading for potential homebuyers and sellers.',
+  description: 'Analysis of today&apos;s housing market conditions and expert predictions on where the market is heading for potential homebuyers and sellers.',
   keywords: 'housing market trends, real estate market analysis, housing market predictions, home buying market, real estate forecast',
 };
 
@@ -34,11 +35,16 @@ export default function HousingMarketTrendsPage() {
               <span className="mx-2">•</span>
               <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded">Market</span>
             </div>
-            <img 
-              src="https://images.unsplash.com/photo-1560520031-3a4dc4e9de0c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80" 
-              alt="Housing Market Graph" 
-              className="w-full h-96 object-cover rounded-lg shadow-md"
-            />
+            <div className="relative w-full h-96">
+              <Image 
+                src="https://images.unsplash.com/photo-1560520031-3a4dc4e9de0c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80" 
+                alt="Housing Market Graph" 
+                fill
+                className="object-cover rounded-lg shadow-md"
+                unoptimized
+                priority
+              />
+            </div>
           </div>
           
           {/* Table of Contents */}
@@ -61,13 +67,13 @@ export default function HousingMarketTrendsPage() {
                 <a href="#regional" className="text-blue-600 hover:text-blue-800">Regional Market Variations</a>
               </li>
               <li>
-                <a href="#buyer-vs-seller" className="text-blue-600 hover:text-blue-800">Buyer's vs. Seller's Market</a>
+                <a href="#buyer-vs-seller" className="text-blue-600 hover:text-blue-800">Buyer&apos;s vs. Seller&apos;s Market</a>
               </li>
               <li>
                 <a href="#predictions" className="text-blue-600 hover:text-blue-800">Market Predictions for Next 12-24 Months</a>
               </li>
               <li>
-                <a href="#strategies" className="text-blue-600 hover:text-blue-800">Strategies for Today's Market</a>
+                <a href="#strategies" className="text-blue-600 hover:text-blue-800">Strategies for Today&apos;s Market</a>
               </li>
             </ul>
           </div>
@@ -80,7 +86,7 @@ export default function HousingMarketTrendsPage() {
                 The housing market has been on a rollercoaster ride over the past few years. After the pandemic-fueled buying frenzy that saw record-low inventory and skyrocketing prices, the market has begun to stabilize, albeit with significant challenges for both buyers and sellers.
               </p>
               <p className="mb-4">
-                Today's market is characterized by higher mortgage rates than we've seen in over a decade, gradually improving inventory levels, and a slowdown in the pace of home price appreciation. These factors have created a more balanced market than during the height of the pandemic, but one that still presents unique challenges.
+                Today&apos;s market is characterized by higher mortgage rates than we&apos;ve seen in over a decade, gradually improving inventory levels, and a slowdown in the pace of home price appreciation. These factors have created a more balanced market than during the height of the pandemic, but one that still presents unique challenges.
               </p>
               <div className="bg-blue-50 p-6 rounded-lg my-6">
                 <h3 className="text-xl font-semibold text-blue-800 mb-2">Key Market Indicators</h3>
@@ -123,14 +129,14 @@ export default function HousingMarketTrendsPage() {
                     </tr>
                     <tr>
                       <td className="border border-gray-200 px-4 py-2">Seller Behavior</td>
-                      <td className="border border-gray-200 px-4 py-2">"Rate lock-in effect" - reluctance to sell and give up low rates</td>
+                      <td className="border border-gray-200 px-4 py-2">&quot;Rate lock-in effect&quot; - reluctance to sell and give up low rates</td>
                     </tr>
                   </tbody>
                 </table>
               </div>
               
               <p className="mb-4">
-                The rate environment has created a "lock-in effect" where many homeowners with sub-4% mortgage rates are reluctant to sell and take on a new mortgage at today's higher rates. This has contributed to inventory shortages in many markets.
+                The rate environment has created a &quot;lock-in effect&quot; where many homeowners with sub-4% mortgage rates are reluctant to sell and take on a new mortgage at today&apos;s higher rates. This has contributed to inventory shortages in many markets.
               </p>
               
               <div className="border-l-4 border-yellow-500 pl-4 py-2 mb-6">
@@ -146,7 +152,7 @@ export default function HousingMarketTrendsPage() {
                 Despite higher mortgage rates, which many predicted would cause significant price corrections, home values have proven remarkably resilient. After the explosive growth of 2020-2022, when many markets saw 20%+ annual appreciation, prices have largely stabilized with modest growth continuing in most areas.
               </p>
               <p className="mb-4">
-                Several factors help explain why prices haven't fallen substantially despite affordability challenges:
+                Several factors help explain why prices haven&apos;t fallen substantially despite affordability challenges:
               </p>
               <ul className="list-disc ml-6 mb-6 space-y-2">
                 <li><strong>Persistent inventory shortages</strong> in most markets</li>
@@ -179,7 +185,7 @@ export default function HousingMarketTrendsPage() {
             <section id="inventory" className="mb-10">
               <h2 className="text-2xl font-bold mb-4">Housing Inventory and Supply Chain</h2>
               <p className="mb-4">
-                Housing inventory—the number of homes available for sale—has been gradually recovering from pandemic lows but remains well below historical norms in most markets. This inventory shortage continues to be a defining feature of today's housing landscape.
+                Housing inventory—the number of homes available for sale—has been gradually recovering from pandemic lows but remains well below historical norms in most markets. This inventory shortage continues to be a defining feature of today&apos;s housing landscape.
               </p>
               <p className="mb-4">
                 New construction has ramped up to help address the shortage, but builders face ongoing challenges:
@@ -199,55 +205,46 @@ export default function HousingMarketTrendsPage() {
               </div>
               
               <p className="mb-4">
-                This persistent structural shortage helps explain why prices haven't dropped substantially despite affordability challenges. Simply put, there aren't enough homes to meet demand, even as that demand has cooled from pandemic peaks.
+                This persistent structural shortage helps explain why prices haven&apos;t dropped substantially despite affordability challenges. Simply put, there aren&apos;t enough homes to meet demand, even as that demand has cooled from pandemic peaks.
               </p>
             </section>
             
             <section id="regional" className="mb-10">
               <h2 className="text-2xl font-bold mb-4">Regional Market Variations</h2>
               <p className="mb-4">
-                While national trends provide a useful overview, real estate remains intensely local. Market conditions vary dramatically between—and even within—regions.
+                While national trends provide a helpful overview, real estate remains fundamentally local. The current market shows significant regional variations:
               </p>
               
-              <h3 className="text-xl font-semibold mb-3">Notable Regional Trends:</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                <div className="bg-gray-50 p-6 rounded-lg">
-                  <h4 className="font-bold text-gray-800">Sun Belt Markets</h4>
-                  <p className="text-gray-600 mb-2">
-                    After explosive pandemic growth, markets like Phoenix, Austin, and Tampa have seen more significant cooling. Price adjustments are more common, and days on market have increased substantially.
-                  </p>
-                  <p className="text-gray-600">
-                    However, strong population growth continues to support long-term demand in these regions.
-                  </p>
+                <div className="bg-white p-5 rounded-lg shadow-sm border border-gray-200">
+                  <h3 className="text-lg font-semibold text-green-700 mb-2">Strongest Markets</h3>
+                  <ul className="space-y-1">
+                    <li>• Midwest affordable metros (Indianapolis, Columbus)</li>
+                    <li>• Southern growth hubs (Charlotte, Nashville, Austin)</li>
+                    <li>• Florida markets with migration gains</li>
+                    <li>• Non-coastal areas with job growth</li>
+                  </ul>
                 </div>
-                <div className="bg-gray-50 p-6 rounded-lg">
-                  <h4 className="font-bold text-gray-800">Coastal Markets</h4>
-                  <p className="text-gray-600 mb-2">
-                    Expensive coastal markets like San Francisco, Seattle, and New York saw pandemic-era softness but have begun to stabilize. Supply remains extremely tight in these regions.
-                  </p>
-                  <p className="text-gray-600">
-                    High costs continue to drive migration to more affordable areas, but job growth in tech and finance helps maintain demand.
-                  </p>
-                </div>
-                <div className="bg-gray-50 p-6 rounded-lg">
-                  <h4 className="font-bold text-gray-800">Midwest/Northeast</h4>
-                  <p className="text-gray-600">
-                    More affordable markets in the Midwest and parts of the Northeast have shown resilience, with steady price growth and strong demand. Cities like Columbus, Indianapolis, and Philadelphia offer relative affordability and economic opportunities.
-                  </p>
-                </div>
-                <div className="bg-gray-50 p-6 rounded-lg">
-                  <h4 className="font-bold text-gray-800">Rural/Resort Areas</h4>
-                  <p className="text-gray-600">
-                    Pandemic-driven demand for rural and resort areas has moderated but remains above pre-pandemic levels. Remote work continues to enable lifestyle migration, though at a slower pace than during 2020-2021.
-                  </p>
+                <div className="bg-white p-5 rounded-lg shadow-sm border border-gray-200">
+                  <h3 className="text-lg font-semibold text-red-700 mb-2">Cooling Markets</h3>
+                  <ul className="space-y-1">
+                    <li>• Pandemic boomtowns with inflated prices</li>
+                    <li>• High-cost coastal areas (SF Bay Area, Seattle)</li>
+                    <li>• Areas with high inventory of luxury homes</li>
+                    <li>• Markets with significant new construction</li>
+                  </ul>
                 </div>
               </div>
+              
+              <p className="mb-4">
+                The pandemic accelerated migration patterns that were already underway, with more people moving from high-cost coastal metros to more affordable areas in the South and Mountain West. Remote work flexibility continues to influence these patterns, though at a slower pace than during the height of the pandemic.
+              </p>
             </section>
             
             <section id="buyer-vs-seller" className="mb-10">
-              <h2 className="text-2xl font-bold mb-4">Buyer's vs. Seller's Market</h2>
+              <h2 className="text-2xl font-bold mb-4">Buyer&apos;s vs. Seller&apos;s Market</h2>
               <p className="mb-4">
-                The market has moved toward better balance after the extreme seller's market of 2020-2022, though conditions vary significantly by location and price point.
+                The market has moved toward better balance after the extreme seller&apos;s market of 2020-2022, though conditions vary significantly by location and price point.
               </p>
               
               <div className="overflow-x-auto mb-6">
@@ -256,35 +253,35 @@ export default function HousingMarketTrendsPage() {
                     <tr>
                       <th className="border border-gray-200 px-4 py-2 bg-gray-50">Market Type</th>
                       <th className="border border-gray-200 px-4 py-2 bg-gray-50">Characteristics</th>
-                      <th className="border border-gray-200 px-4 py-2 bg-gray-50">Where We're Seeing It</th>
+                      <th className="border border-gray-200 px-4 py-2 bg-gray-50">Where We&apos;re Seeing It</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td className="border border-gray-200 px-4 py-2 font-medium">Strong Seller's Market</td>
+                      <td className="border border-gray-200 px-4 py-2 font-medium">Strong Seller&apos;s Market</td>
                       <td className="border border-gray-200 px-4 py-2">
                         Multiple offers, homes selling above asking, minimal contingencies, quick sales
                       </td>
                       <td className="border border-gray-200 px-4 py-2">
-                        Entry-level homes in most markets; desirable suburbs with good schools; affordable areas with strong job growth
+                        Affordable homes in desirable areas, entry-level price points in most regions
                       </td>
                     </tr>
                     <tr>
                       <td className="border border-gray-200 px-4 py-2 font-medium">Balanced Market</td>
                       <td className="border border-gray-200 px-4 py-2">
-                        Normal negotiation, reasonable time on market, some contingencies accepted
+                        Homes selling close to asking price, reasonable negotiation on both sides, 30-60 days on market
                       </td>
                       <td className="border border-gray-200 px-4 py-2">
-                        Mid-priced homes in many markets; secondary cities; older suburbs
+                        Mid-priced homes in many suburban areas, smaller metros
                       </td>
                     </tr>
                     <tr>
-                      <td className="border border-gray-200 px-4 py-2 font-medium">Buyer's Market</td>
+                      <td className="border border-gray-200 px-4 py-2 font-medium">Buyer&apos;s Market</td>
                       <td className="border border-gray-200 px-4 py-2">
                         Price reductions, longer days on market, buyer contingencies, seller concessions
                       </td>
                       <td className="border border-gray-200 px-4 py-2">
-                        Luxury homes in some markets; condos in some urban areas; overheated markets adjusting from pandemic spikes
+                        Luxury segment in many markets, some high-cost urban areas, vacation home markets
                       </td>
                     </tr>
                   </tbody>
@@ -292,110 +289,133 @@ export default function HousingMarketTrendsPage() {
               </div>
               
               <p className="mb-4">
-                The most competitive segment continues to be affordable, move-in ready homes in desirable areas. First-time buyers face the most challenges, competing for a limited supply of entry-level properties while contending with higher mortgage rates.
+                The shift toward more balanced conditions has been gradual rather than dramatic. Inventory remains limited in many areas, which continues to support prices despite affordability challenges from higher mortgage rates.
               </p>
             </section>
             
             <section id="predictions" className="mb-10">
               <h2 className="text-2xl font-bold mb-4">Market Predictions for Next 12-24 Months</h2>
               <p className="mb-4">
-                While no one can predict the future with certainty, several trends are likely to shape the housing market in the coming years:
+                While no one has a crystal ball, current data and trends suggest the following outlook for the housing market:
               </p>
               
-              <div className="bg-blue-50 p-6 rounded-lg my-6">
-                <h3 className="text-xl font-semibold text-blue-800 mb-4">Expert Consensus Predictions</h3>
-                <ul className="space-y-4">
-                  <li className="flex items-start">
-                    <span className="bg-blue-100 text-blue-800 font-semibold p-1 rounded mr-2">1</span>
-                    <div>
-                      <strong className="font-medium">Mortgage Rates:</strong> 
-                      <span className="text-gray-700"> Gradual moderation possible, with most economists projecting rates between 5.5-7% through 2024, depending on inflation and Federal Reserve policy.</span>
-                    </div>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="bg-blue-100 text-blue-800 font-semibold p-1 rounded mr-2">2</span>
-                    <div>
-                      <strong className="font-medium">Home Prices:</strong> 
-                      <span className="text-gray-700"> Continued but modest appreciation in most markets (0-5% annually), with some previously overheated markets seeing minor corrections.</span>
-                    </div>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="bg-blue-100 text-blue-800 font-semibold p-1 rounded mr-2">3</span>
-                    <div>
-                      <strong className="font-medium">Inventory:</strong> 
-                      <span className="text-gray-700"> Gradual improvements as more sellers accept market realities and new construction adds supply, but likely remaining below pre-pandemic levels.</span>
-                    </div>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="bg-blue-100 text-blue-800 font-semibold p-1 rounded mr-2">4</span>
-                    <div>
-                      <strong className="font-medium">Market Activity:</strong> 
-                      <span className="text-gray-700"> Modest recovery in transaction volume as buyers and sellers adjust to the new rate environment, but likely remaining below peak levels.</span>
-                    </div>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="bg-blue-100 text-blue-800 font-semibold p-1 rounded mr-2">5</span>
-                    <div>
-                      <strong className="font-medium">Affordability:</strong> 
-                      <span className="text-gray-700"> Continued challenges for first-time buyers, with only gradual improvement as wage growth and possibly moderating rates help offset high prices.</span>
-                    </div>
-                  </li>
-                </ul>
+              <div className="bg-gray-50 p-6 rounded-lg my-6">
+                <h3 className="text-xl font-semibold text-gray-800 mb-4">Expert Consensus Predictions</h3>
+                <div className="space-y-4">
+                  <div>
+                    <h4 className="font-bold text-gray-800">Home Prices</h4>
+                    <p className="text-gray-700">Most economists project modest appreciation (2-5% annually) nationwide, with significant regional variations. Few predict major price declines barring a severe recession.</p>
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-gray-800">Mortgage Rates</h4>
+                    <p className="text-gray-700">Modest decline expected if inflation continues to ease, with most projections showing 30-year fixed rates between 5.5-6.5% by end of 2024, depending on Federal Reserve policy.</p>
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-gray-800">Sales Volume</h4>
+                    <p className="text-gray-700">Gradual improvement as buyers adjust to the higher rate environment and more inventory becomes available. Still below pre-pandemic levels through 2024.</p>
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-gray-800">Inventory</h4>
+                    <p className="text-gray-700">Continuing slow improvement as more sellers enter the market and new construction adds supply. Still likely to remain below balanced market levels in most areas.</p>
+                  </div>
+                </div>
               </div>
               
-              <p className="mb-4">
-                The likelihood of a dramatic housing crash similar to 2008 remains low, given stronger lending standards, less speculative buying, and the fundamental supply-demand imbalance. However, economic uncertainty, including potential recession risks, could impact housing in ways that are difficult to predict.
-              </p>
+              <div className="border-l-4 border-yellow-500 pl-4 py-2 mb-6">
+                <p className="italic text-gray-700">
+                  <strong>Important Note:</strong> These predictions assume no major economic recession or significant geopolitical events that could disrupt financial markets. A severe economic downturn would likely lead to lower mortgage rates but could also increase unemployment and reduce buyer demand.
+                </p>
+              </div>
             </section>
             
             <section id="strategies" className="mb-10">
-              <h2 className="text-2xl font-bold mb-4">Strategies for Today's Market</h2>
+              <h2 className="text-2xl font-bold mb-4">Strategies for Today&apos;s Market</h2>
               
               <h3 className="text-xl font-semibold mb-3">For Buyers:</h3>
               <ul className="list-disc ml-6 mb-6 space-y-2">
-                <li><strong>Adjust expectations</strong> to the current affordability reality</li>
-                <li><strong>Get fully pre-approved</strong> before house hunting</li>
-                <li><strong>Consider assumable mortgages</strong> (particularly VA and FHA loans)</li>
-                <li><strong>Explore seller concessions</strong> for rate buydowns or closing costs</li>
-                <li><strong>Widen your geographic search</strong> to include emerging areas</li>
-                <li><strong>Be ready to act quickly</strong> on desirable properties</li>
-                <li><strong>Consider "house hacking"</strong> with roommates or income potential</li>
+                <li><strong>Expand search criteria</strong> - consider up-and-coming neighborhoods or slightly longer commutes</li>
+                <li><strong>Get creative with financing</strong> - explore ARMs, temporary buydowns, or seller concessions</li>
+                <li><strong>Consider &quot;rate lock and shop&quot;</strong> programs to protect against further rate increases</li>
+                <li><strong>Don&apos;t wait for significant price drops</strong> if you find the right home</li>
+                <li><strong>Be prepared to negotiate</strong> more than in recent years</li>
               </ul>
               
               <h3 className="text-xl font-semibold mb-3">For Sellers:</h3>
               <ul className="list-disc ml-6 mb-6 space-y-2">
                 <li><strong>Price realistically</strong> based on current market conditions</li>
-                <li><strong>Invest in preparation</strong> - today's buyers expect move-in ready homes</li>
+                <li><strong>Invest in preparation</strong> - today&apos;s buyers expect move-in ready homes</li>
                 <li><strong>Consider offering concessions</strong> rather than reducing the price</li>
                 <li><strong>Be flexible with contingencies</strong> - buyers have more leverage now</li>
-                <li><strong>Market effectively</strong> with professional photography and maximum exposure</li>
-                <li><strong>Time the market</strong> when possible - spring/early summer typically brings the most buyers</li>
+                <li><strong>Partner with agents who excel at digital marketing</strong> to maximize exposure</li>
               </ul>
               
-              <div className="border-l-4 border-green-500 pl-4 py-2 mb-6">
+              <div className="bg-blue-50 p-6 rounded-lg my-6">
+                <h3 className="text-xl font-semibold text-blue-800 mb-3">The Silver Lining</h3>
+                <p className="mb-3">
+                  While today&apos;s market presents challenges for both buyers and sellers, it also offers opportunities:
+                </p>
+                <ul className="list-disc ml-6 space-y-2">
+                  <li>Less frenzied buying process with time for due diligence</li>
+                  <li>More negotiating power for buyers than in recent years</li>
+                  <li>Lock in a home now; refinance later when rates improve</li>
+                  <li>Sellers still benefiting from substantial equity gains since 2019</li>
+                  <li>More balanced market creates healthier long-term conditions</li>
+                </ul>
+              </div>
+            </section>
+            
+            <section className="mb-10">
+              <h2 className="text-2xl font-bold mb-4">Conclusion</h2>
+              <p className="mb-4">
+                The housing market continues to navigate the transition from the pandemic-fueled frenzy to a more sustainable pace. While higher mortgage rates have created affordability challenges, the persistent shortage of housing inventory has prevented significant price corrections in most markets.
+              </p>
+              <p className="mb-4">
+                Looking ahead, the market is likely to continue its gradual balancing act, with modest price appreciation, slowly improving inventory, and potentially some relief on mortgage rates if inflation continues to moderate. Regional variations will remain significant, with local economic conditions, migration patterns, and housing supply playing crucial roles in market performance.
+              </p>
+              <p className="mb-4">
+                For those participating in the housing market today, whether as buyers or sellers, success will come from realistic expectations, flexibility, and strategic approaches tailored to local market conditions.
+              </p>
+              <div className="border-l-4 border-green-500 pl-4 py-2">
                 <p className="italic text-gray-700">
-                  <strong>Long-term Perspective:</strong> Despite current challenges, homeownership remains a powerful wealth-building tool and hedge against inflation. While timing matters, time in the market is typically more important than timing the market perfectly.
+                  <strong>Final Thought:</strong> Despite current challenges, homeownership remains a powerful long-term wealth-building tool and a cornerstone of financial security for most Americans. Those who can navigate today&apos;s market conditions successfully will likely benefit from both the personal and financial advantages of homeownership for years to come.
                 </p>
               </div>
             </section>
             
-            <div className="border-t border-gray-200 pt-8 mt-8">
-              <h3 className="text-xl font-bold mb-4">Related Articles</h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <Link 
-                  href="/blog/first-time-homebuyer" 
-                  className="block bg-gray-50 p-4 rounded-lg hover:bg-gray-100"
-                >
-                  <h4 className="font-semibold text-blue-700">First-Time Homebuyer Guide</h4>
-                  <p className="text-sm text-gray-600 mt-1">Everything you need to know when buying your first home.</p>
-                </Link>
-                <Link 
-                  href="/blog/down-payment-options" 
-                  className="block bg-gray-50 p-4 rounded-lg hover:bg-gray-100"
-                >
-                  <h4 className="font-semibold text-blue-700">Down Payment Options</h4>
-                  <p className="text-sm text-gray-600 mt-1">Explore different down payment options for your mortgage.</p>
-                </Link>
+            {/* Author Bio */}
+            <div className="bg-gray-50 p-6 rounded-lg mt-12">
+              <h3 className="text-xl font-semibold mb-3">About the Author</h3>
+              <div className="flex items-center">
+                <div className="w-16 h-16 rounded-full bg-gray-300 mr-4"></div>
+                <div>
+                  <p className="font-medium">Sarah Johnson</p>
+                  <p className="text-sm text-gray-600 mb-2">Real Estate Market Analyst</p>
+                  <p className="text-sm text-gray-700">
+                    Sarah has been analyzing real estate markets for over 15 years and regularly contributes to housing market publications and research reports. She holds a master&apos;s degree in Urban Planning and Economic Development.
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            {/* Related Articles */}
+            <div className="mt-12">
+              <h3 className="text-xl font-semibold mb-6">Related Articles</h3>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div className="bg-white p-4 rounded-lg shadow-sm border border-gray-200">
+                  <h4 className="font-bold mb-2">Understanding Mortgage Rate Trends</h4>
+                  <p className="text-sm text-gray-600 mb-3">How Federal policy impacts your home loan options</p>
+                  <a href="#" className="text-blue-600 hover:text-blue-800 text-sm">Read Article →</a>
+                </div>
+                <div className="bg-white p-4 rounded-lg shadow-sm border border-gray-200">
+                  <h4 className="font-bold mb-2">First-Time Homebuyer Guide 2024</h4>
+                  <p className="text-sm text-gray-600 mb-3">Navigating today&apos;s market as a new buyer</p>
+                  <a href="#" className="text-blue-600 hover:text-blue-800 text-sm">Read Article →</a>
+                </div>
+                <div className="bg-white p-4 rounded-lg shadow-sm border border-gray-200">
+                  <h4 className="font-bold mb-2">Home Renovation ROI Analysis</h4>
+                  <p className="text-sm text-gray-600 mb-3">Which improvements add the most value?</p>
+                  <a href="#" className="text-blue-600 hover:text-blue-800 text-sm">Read Article →</a>
+                </div>
               </div>
             </div>
           </div>

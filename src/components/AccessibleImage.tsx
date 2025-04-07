@@ -10,7 +10,6 @@ interface AccessibleImageProps {
   height?: number;
   className?: string;
   priority?: boolean;
-  loading?: 'eager' | 'lazy';
   fallbackSrc?: string;
 }
 
@@ -25,7 +24,6 @@ const AccessibleImage: React.FC<AccessibleImageProps> = ({
   height,
   className = '',
   priority = false,
-  loading = 'lazy',
   fallbackSrc = '/images/placeholder.jpg',
 }) => {
   const [imgSrc, setImgSrc] = React.useState(src);
@@ -39,22 +37,24 @@ const AccessibleImage: React.FC<AccessibleImageProps> = ({
     }
   };
 
-  // If the src is remote (not from our domain), use a standard img tag
+  // If the src is remote (not from our domain), use a responsive Image component with remote pattern
   const isRemoteImage = src.startsWith('http');
 
   if (isRemoteImage) {
     return (
-      <img
-        src={imgSrc}
-        alt={alt}
-        width={width}
-        height={height}
-        className={className}
-        loading={loading}
-        onError={handleError}
-        // Improve accessibility for images
-        role={alt === '' ? 'presentation' : undefined}
-      />
+      <div className={`relative ${width && height ? '' : 'w-full h-64'}`} style={width && height ? { width: `${width}px`, height: `${height}px` } : {}}>
+        <Image
+          src={imgSrc}
+          alt={alt}
+          fill={!(width && height)}
+          width={width}
+          height={height}
+          className={`${className} ${!(width && height) ? 'object-cover' : ''}`}
+          priority={priority}
+          onError={handleError}
+          unoptimized
+        />
+      </div>
     );
   }
 

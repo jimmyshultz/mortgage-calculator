@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -34,11 +35,16 @@ export default function MortgageTypesPage() {
               <span className="mx-2">•</span>
               <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded">Education</span>
             </div>
-            <img 
-              src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80" 
-              alt="Types of Mortgages" 
-              className="w-full h-96 object-cover rounded-lg shadow-md"
-            />
+            <div className="relative w-full h-96">
+              <Image 
+                src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80" 
+                alt="Types of Mortgages" 
+                fill
+                className="object-cover rounded-lg shadow-md"
+                unoptimized
+                priority
+              />
+            </div>
           </div>
           
           {/* Table of Contents */}
@@ -74,7 +80,7 @@ export default function MortgageTypesPage() {
             <section id="introduction" className="mb-10">
               <h2 className="text-2xl font-bold mb-4">Introduction</h2>
               <p className="mb-4">
-                Choosing the right mortgage is just as important as finding the right home. The type of mortgage you select will impact your monthly payments, the total cost of your loan, and how long you'll be paying it off. With numerous options available, understanding the differences between mortgage types is essential for making an informed decision.
+                Choosing the right mortgage is just as important as finding the right home. The type of mortgage you select will impact your monthly payments, the total cost of your loan, and how long you&apos;ll be paying it off. With numerous options available, understanding the differences between mortgage types is essential for making an informed decision.
               </p>
               <p className="mb-4">
                 This guide explores the most common types of mortgages, their advantages and disadvantages, and which might be the best fit for different financial situations and homebuying goals.
@@ -114,7 +120,7 @@ export default function MortgageTypesPage() {
               
               <div className="border-l-4 border-green-500 pl-4 py-2 mb-6">
                 <p className="italic text-gray-700">
-                  "Fixed-rate mortgages provide stability and predictability, making them the most popular choice for first-time homebuyers and those who value consistent monthly payments."
+                  &quot;Fixed-rate mortgages provide stability and predictability, making them the most popular choice for first-time homebuyers and those who value consistent monthly payments.&quot;
                 </p>
               </div>
             </section>

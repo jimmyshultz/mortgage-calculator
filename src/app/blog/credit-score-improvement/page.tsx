@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -34,11 +35,15 @@ export default function CreditScoreImprovementPage() {
               <span className="mx-2">•</span>
               <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded">Tips</span>
             </div>
-            <img 
-              src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80" 
-              alt="Credit Score Improvement" 
-              className="w-full h-96 object-cover rounded-lg shadow-md"
-            />
+            <div className="relative w-full h-96">
+              <Image 
+                src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80" 
+                alt="Credit Score Improvement"
+                fill
+                className="object-cover rounded-lg shadow-md"
+                priority
+              />
+            </div>
           </div>
           
           {/* Table of Contents */}
@@ -77,7 +82,7 @@ export default function CreditScoreImprovementPage() {
                 Your credit score is one of the most important factors lenders consider when you apply for a mortgage. A higher score not only increases your chances of approval but can also help you secure a better interest rate, potentially saving you thousands of dollars over the life of your loan.
               </p>
               <p className="mb-4">
-                For example, the difference between a "good" credit score (670-739) and an "excellent" score (740+) could mean a 0.5% difference in your interest rate. On a $300,000 mortgage over 30 years, that's a savings of around $30,000!
+                For example, the difference between a &quot;good&quot; credit score (670-739) and an &quot;excellent&quot; score (740+) could mean a 0.5% difference in your interest rate. On a $300,000 mortgage over 30 years, that&apos;s a savings of around $30,000!
               </p>
               <div className="bg-blue-50 p-6 rounded-lg my-6">
                 <h3 className="text-xl font-semibold text-blue-800 mb-2">Credit Score Ranges and Mortgage Impact</h3>
@@ -93,14 +98,14 @@ export default function CreditScoreImprovementPage() {
             <section id="strategy1" className="mb-10">
               <h2 className="text-2xl font-bold mb-4">Strategy 1: Pay Down Credit Card Balances</h2>
               <p className="mb-4">
-                One of the most effective ways to quickly boost your credit score is to reduce your credit utilization ratio—the percentage of your available credit that you're currently using. This factor accounts for about 30% of your FICO score.
+                One of the most effective ways to quickly boost your credit score is to reduce your credit utilization ratio—the percentage of your available credit that you&apos;re currently using. This factor accounts for about 30% of your FICO score.
               </p>
               <p className="mb-4">
                 Aim to get your credit card balances below 30% of your credit limits, with lower being even better. If possible, try to get them below 10% for the maximum positive impact on your score.
               </p>
               <div className="border-l-4 border-green-500 pl-4 py-2 mb-6">
                 <p className="italic text-gray-700">
-                  <strong>Pro Tip:</strong> Even if you can't pay your balances completely, make larger-than-minimum payments to show lenders you're actively reducing debt.
+                  <strong>Pro Tip:</strong> Even if you can&apos;t pay your balances completely, make larger-than-minimum payments to show lenders you&apos;re actively reducing debt.
                 </p>
               </div>
               <p className="mb-4">
@@ -119,7 +124,7 @@ export default function CreditScoreImprovementPage() {
               <div className="bg-yellow-50 p-6 rounded-lg my-6">
                 <h3 className="text-lg font-semibold text-yellow-800 mb-2">Important Exception</h3>
                 <p className="text-gray-700">
-                  When you're rate-shopping for a mortgage, multiple inquiries for the same type of loan within a 14-45 day period (depending on the scoring model) are typically counted as a single inquiry, minimizing the impact on your score.
+                  When you&apos;re rate-shopping for a mortgage, multiple inquiries for the same type of loan within a 14-45 day period (depending on the scoring model) are typically counted as a single inquiry, minimizing the impact on your score.
                 </p>
               </div>
             </section>
@@ -130,10 +135,10 @@ export default function CreditScoreImprovementPage() {
                 Studies show that about 25% of credit reports contain errors that could negatively impact scores. Review your credit reports from all three major bureaus (Equifax, Experian, and TransUnion) and look for inaccuracies such as:
               </p>
               <ul className="list-disc ml-6 mb-6 space-y-2">
-                <li>Accounts that don't belong to you</li>
+                <li>Accounts that don&apos;t belong to you</li>
                 <li>Late payments reported incorrectly</li>
                 <li>Incorrect credit limits or loan amounts</li>
-                <li>Accounts incorrectly shown as open when they're closed</li>
+                <li>Accounts incorrectly shown as open when they&apos;re closed</li>
                 <li>The same debt listed multiple times</li>
               </ul>
               <p className="mb-4">
@@ -150,7 +155,7 @@ export default function CreditScoreImprovementPage() {
                 If you have a trusted family member or close friend with excellent credit, ask them to add you as an authorized user on one of their older, well-managed credit card accounts. This can be particularly helpful if you have a limited credit history.
               </p>
               <p className="mb-4">
-                When you become an authorized user, the account's payment history often appears on your credit report, potentially boosting your score. The ideal account would be one with:
+                When you become an authorized user, the account&apos;s payment history often appears on your credit report, potentially boosting your score. The ideal account would be one with:
               </p>
               <ul className="list-disc ml-6 mb-6 space-y-2">
                 <li>Perfect payment history</li>
@@ -159,7 +164,7 @@ export default function CreditScoreImprovementPage() {
               </ul>
               <div className="border-l-4 border-red-500 pl-4 py-2 mb-6">
                 <p className="italic text-gray-700">
-                  <strong>Warning:</strong> This strategy requires significant trust. Both parties should understand their responsibilities, as any negative account activity will affect both the primary user's and authorized user's credit scores.
+                  <strong>Warning:</strong> This strategy requires significant trust. Both parties should understand their responsibilities, as any negative account activity will affect both the primary user&apos;s and authorized user&apos;s credit scores.
                 </p>
               </div>
             </section>
@@ -175,7 +180,7 @@ export default function CreditScoreImprovementPage() {
               <div className="bg-blue-50 p-6 rounded-lg my-6">
                 <h3 className="text-xl font-semibold text-blue-800 mb-2">Beyond Credit Cards</h3>
                 <p className="text-gray-700">
-                  Remember that on-time payments for other obligations like rent, utilities, and phone bills can also help your credit score if they're reported to credit bureaus. Services like Experian Boost or tools through your bank may allow you to get credit for these payments.
+                  Remember that on-time payments for other obligations like rent, utilities, and phone bills can also help your credit score if they&apos;re reported to credit bureaus. Services like Experian Boost or tools through your bank may allow you to get credit for these payments.
                 </p>
               </div>
             </section>
@@ -183,7 +188,7 @@ export default function CreditScoreImprovementPage() {
             <section id="timeline" className="mb-10">
               <h2 className="text-2xl font-bold mb-4">Timeline for Credit Improvement</h2>
               <p className="mb-4">
-                Credit improvement doesn't happen overnight, but you can see meaningful results within a few months by following these strategies. Here's a general timeline:
+                Credit improvement doesn&apos;t happen overnight, but you can see meaningful results within a few months by following these strategies. Here&apos;s a general timeline:
               </p>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
                 <div className="bg-gray-50 p-4 rounded-lg">

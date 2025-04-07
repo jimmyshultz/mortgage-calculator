@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -34,11 +35,16 @@ export default function DownPaymentOptionsPage() {
               <span className="mx-2">•</span>
               <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded">Finance</span>
             </div>
-            <img 
-              src="https://images.pexels.com/photos/259249/pexels-photo-259249.jpeg?auto=compress&cs=tinysrgb&w=1200" 
-              alt="Money and House Model Representing Down Payment" 
-              className="w-full h-96 object-cover rounded-lg shadow-md"
-            />
+            <div className="relative w-full h-96">
+              <Image 
+                src="https://images.pexels.com/photos/259249/pexels-photo-259249.jpeg?auto=compress&cs=tinysrgb&w=1200" 
+                alt="Money and House Model Representing Down Payment" 
+                fill
+                className="object-cover rounded-lg shadow-md"
+                unoptimized
+                priority
+              />
+            </div>
           </div>
           
           {/* Table of Contents */}
@@ -74,10 +80,10 @@ export default function DownPaymentOptionsPage() {
             <section id="introduction" className="mb-10">
               <h2 className="text-2xl font-bold mb-4">The Down Payment Dilemma</h2>
               <p className="mb-4">
-                When buying a home, one of the biggest decisions you'll face is how much to put down. The down payment—the portion of the home's purchase price that you pay upfront—can significantly impact your mortgage terms, monthly payments, and overall financial health.
+                When buying a home, one of the biggest decisions you&apos;ll face is how much to put down. The down payment—the portion of the home&apos;s purchase price that you pay upfront—can significantly impact your mortgage terms, monthly payments, and overall financial health.
               </p>
               <p className="mb-4">
-                While the traditional advice has been to put 20% down, today's homebuyers have many more options, from low down payment conventional loans to no down payment government-backed programs. Each option comes with its own advantages and drawbacks.
+                While the traditional advice has been to put 20% down, today&apos;s homebuyers have many more options, from low down payment conventional loans to no down payment government-backed programs. Each option comes with its own advantages and drawbacks.
               </p>
               <div className="bg-blue-50 p-6 rounded-lg my-6">
                 <h3 className="text-xl font-semibold text-blue-800 mb-2">Quick Fact</h3>
@@ -90,7 +96,7 @@ export default function DownPaymentOptionsPage() {
             <section id="traditional" className="mb-10">
               <h2 className="text-2xl font-bold mb-4">Traditional 20% Down Payment</h2>
               <p className="mb-4">
-                For decades, a 20% down payment has been considered the gold standard for mortgage lending. On a $300,000 home, that's $60,000 upfront.
+                For decades, a 20% down payment has been considered the gold standard for mortgage lending. On a $300,000 home, that&apos;s $60,000 upfront.
               </p>
               
               <h3 className="text-xl font-semibold mb-3">Advantages of 20% Down:</h3>
@@ -104,8 +110,8 @@ export default function DownPaymentOptionsPage() {
               
               <h3 className="text-xl font-semibold mb-3">Challenges of 20% Down:</h3>
               <ul className="list-disc ml-6 mb-6 space-y-2">
-                <li><strong>Longer saving time:</strong> It can take many years to save 20% of a home's purchase price.</li>
-                <li><strong>Opportunity cost:</strong> Money tied up in your home isn't available for other investments or emergencies.</li>
+                <li><strong>Longer saving time:</strong> It can take many years to save 20% of a home&apos;s purchase price.</li>
+                <li><strong>Opportunity cost:</strong> Money tied up in your home isn&apos;t available for other investments or emergencies.</li>
                 <li><strong>Delayed homeownership:</strong> You might miss out on market appreciation while saving.</li>
               </ul>
               
@@ -132,7 +138,7 @@ export default function DownPaymentOptionsPage() {
                 <div className="bg-gray-50 p-6 rounded-lg">
                   <h3 className="font-bold text-lg text-gray-800 mb-2">FHA Loans (3.5%)</h3>
                   <p className="text-gray-600">
-                    Federal Housing Administration loans allow down payments as low as 3.5% with credit scores of 580+. They're popular with first-time buyers but require both upfront and annual mortgage insurance premiums.
+                    Federal Housing Administration loans allow down payments as low as 3.5% with credit scores of 580+. They&apos;re popular with first-time buyers but require both upfront and annual mortgage insurance premiums.
                   </p>
                 </div>
               </div>
@@ -140,7 +146,7 @@ export default function DownPaymentOptionsPage() {
               <h3 className="text-xl font-semibold mb-3">Advantages of Low Down Payments:</h3>
               <ul className="list-disc ml-6 mb-6 space-y-2">
                 <li><strong>Faster path to homeownership:</strong> You can buy sooner rather than waiting years to save 20%.</li>
-                <li><strong>Maintain cash reserves:</strong> You'll have more money available for moving costs, home improvements, or emergencies.</li>
+                <li><strong>Maintain cash reserves:</strong> You&apos;ll have more money available for moving costs, home improvements, or emergencies.</li>
                 <li><strong>Potential for appreciation:</strong> You can start building equity through market appreciation sooner.</li>
               </ul>
               
@@ -185,7 +191,7 @@ export default function DownPaymentOptionsPage() {
             <section id="pmi" className="mb-10">
               <h2 className="text-2xl font-bold mb-4">Understanding PMI</h2>
               <p className="mb-4">
-                Private Mortgage Insurance (PMI) is a type of insurance that protects the lender—not you—if you default on your loan. It's typically required when you put less than 20% down on a conventional loan.
+                Private Mortgage Insurance (PMI) is a type of insurance that protects the lender—not you—if you default on your loan. It&apos;s typically required when you put less than 20% down on a conventional loan.
               </p>
               
               <h3 className="text-xl font-semibold mb-3">PMI Facts:</h3>
@@ -196,12 +202,12 @@ export default function DownPaymentOptionsPage() {
               </ul>
               
               <p className="mb-4">
-                Let's look at an example: On a $300,000 home with 5% down ($15,000), you'd finance $285,000. If your PMI rate is 0.75%, you'd pay about $2,137 per year or $178 per month in PMI until you reach 20% equity.
+                Let&apos;s look at an example: On a $300,000 home with 5% down ($15,000), you&apos;d finance $285,000. If your PMI rate is 0.75%, you&apos;d pay about $2,137 per year or $178 per month in PMI until you reach 20% equity.
               </p>
               
               <div className="border-l-4 border-blue-500 pl-4 py-2 mb-6">
                 <p className="italic text-gray-700">
-                  <strong>Strategy:</strong> If you're considering putting down just under 20% (like 15%), run the numbers to see if it makes more sense to put down the full 20% to avoid PMI altogether. For some borrowers, using available cash to reach 20% offers a better return than keeping those funds in savings.
+                  <strong>Strategy:</strong> If you&apos;re considering putting down just under 20% (like 15%), run the numbers to see if it makes more sense to put down the full 20% to avoid PMI altogether. For some borrowers, using available cash to reach 20% offers a better return than keeping those funds in savings.
                 </p>
               </div>
             </section>
@@ -209,14 +215,14 @@ export default function DownPaymentOptionsPage() {
             <section id="assistance" className="mb-10">
               <h2 className="text-2xl font-bold mb-4">Down Payment Assistance Programs</h2>
               <p className="mb-4">
-                Don't assume you have to save every penny of your down payment. Numerous assistance programs can help qualified buyers with down payment and closing costs.
+                Don&apos;t assume you have to save every penny of your down payment. Numerous assistance programs can help qualified buyers with down payment and closing costs.
               </p>
               
               <h3 className="text-xl font-semibold mb-3">Types of Assistance:</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
                 <div className="bg-gray-50 p-4 rounded-lg">
                   <h4 className="font-bold text-gray-800">Grants</h4>
-                  <p className="text-sm text-gray-600">Money that doesn't need to be repaid, typically offered by state and local organizations.</p>
+                  <p className="text-sm text-gray-600">Money that doesn&apos;t need to be repaid, typically offered by state and local organizations.</p>
                 </div>
                 <div className="bg-gray-50 p-4 rounded-lg">
                   <h4 className="font-bold text-gray-800">Forgivable Loans</h4>
@@ -236,7 +242,7 @@ export default function DownPaymentOptionsPage() {
                 These programs vary widely by location and typically have income limits, home price restrictions, and requirements for homebuyer education. Start by checking with:
               </p>
               <ul className="list-disc ml-6 mb-6 space-y-2">
-                <li>Your state's housing finance agency</li>
+                <li>Your state&apos;s housing finance agency</li>
                 <li>Local housing authorities</li>
                 <li>HUD-approved housing counseling agencies</li>
                 <li>Nonprofit organizations in your area</li>
@@ -253,7 +259,7 @@ export default function DownPaymentOptionsPage() {
             <section id="decision" className="mb-10">
               <h2 className="text-2xl font-bold mb-4">Making the Right Decision for Your Situation</h2>
               <p className="mb-4">
-                There's no one-size-fits-all answer to how much you should put down. Consider these factors when making your decision:
+                There&apos;s no one-size-fits-all answer to how much you should put down. Consider these factors when making your decision:
               </p>
               
               <h3 className="text-xl font-semibold mb-3">Financial Considerations:</h3>
@@ -300,7 +306,7 @@ export default function DownPaymentOptionsPage() {
               </div>
               
               <p className="mb-4">
-                Remember, your down payment choice isn't just about minimizing your upfront costs—it's about optimizing your overall financial picture. Sometimes a larger down payment makes sense, while other times that money might be better used elsewhere.
+                Remember, your down payment choice isn&apos;t just about minimizing your upfront costs—it&apos;s about optimizing your overall financial picture. Sometimes a larger down payment makes sense, while other times that money might be better used elsewhere.
               </p>
               
               <div className="border-l-4 border-purple-500 pl-4 py-2 mb-6">

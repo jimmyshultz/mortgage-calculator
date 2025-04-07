@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -75,11 +76,14 @@ export default function BlogPage() {
           {/* Featured post - latest article */}
           <div className="bg-white rounded-lg shadow-md overflow-hidden mb-12">
             <div className="md:flex">
-              <div className="md:w-1/2">
-                <img 
+              <div className="md:w-1/2 relative h-64 md:h-auto">
+                <Image 
                   src={blogPosts[0].imageUrl} 
                   alt={blogPosts[0].title} 
-                  className="h-full w-full object-cover"
+                  fill
+                  className="object-cover"
+                  unoptimized
+                  priority
                 />
               </div>
               <div className="md:w-1/2 p-8">
@@ -111,11 +115,13 @@ export default function BlogPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {blogPosts.slice(1).map((post) => (
               <div key={post.id} className="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
-                <div className="h-48 overflow-hidden">
-                  <img 
+                <div className="h-48 overflow-hidden relative">
+                  <Image 
                     src={post.imageUrl} 
                     alt={post.title} 
-                    className="h-full w-full object-cover transition-transform duration-500 hover:scale-110"
+                    fill
+                    className="object-cover transition-transform duration-500 hover:scale-110"
+                    unoptimized
                   />
                 </div>
                 <div className="p-6 flex-grow">

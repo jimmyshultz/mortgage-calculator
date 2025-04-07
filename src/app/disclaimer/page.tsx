@@ -44,7 +44,7 @@ export default function DisclaimerPage() {
                 <li>Your credit score and history</li>
                 <li>Your income and employment status</li>
                 <li>Current market conditions</li>
-                <li>The specific lender's policies and products</li>
+                <li>The specific lender&apos;s policies and products</li>
                 <li>Property location and type</li>
                 <li>Down payment amount</li>
                 <li>Loan-to-value ratio</li>

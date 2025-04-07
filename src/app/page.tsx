@@ -69,12 +69,12 @@ export default function Home() {
             
             <h2 className="text-2xl font-bold mb-4 text-gray-800">Factors Affecting Your Mortgage</h2>
             <p className="text-gray-600 mb-4 leading-relaxed">
-              Several factors can affect your mortgage payment and the total amount you'll pay over the life of the loan:
+              Several factors can affect your mortgage payment and the total amount you&apos;ll pay over the life of the loan:
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
               <div className="bg-gray-50 p-4 rounded-lg">
                 <div className="font-medium text-gray-700">Loan Amount</div>
-                <p className="text-sm text-gray-600">The total amount you're borrowing</p>
+                <p className="text-sm text-gray-600">The total amount you&apos;re borrowing</p>
               </div>
               <div className="bg-gray-50 p-4 rounded-lg">
                 <div className="font-medium text-gray-700">Down Payment</div>
@@ -98,7 +98,7 @@ export default function Home() {
               </div>
               <div className="bg-gray-50 p-4 rounded-lg md:col-span-2">
                 <div className="font-medium text-gray-700">Private Mortgage Insurance (PMI)</div>
-                <p className="text-sm text-gray-600">Required if your down payment is less than 20% of the home's value</p>
+                <p className="text-sm text-gray-600">Required if your down payment is less than 20% of the home&apos;s value</p>
               </div>
             </div>
             

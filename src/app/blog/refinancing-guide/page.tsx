@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -34,11 +35,16 @@ export default function RefinancingGuidePage() {
               <span className="mx-2">•</span>
               <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded">Guides</span>
             </div>
-            <img 
-              src="https://images.pexels.com/photos/5849577/pexels-photo-5849577.jpeg?auto=compress&cs=tinysrgb&w=1200" 
-              alt="Refinancing Mortgage Documents and Calculator" 
-              className="w-full h-96 object-cover rounded-lg shadow-md"
-            />
+            <div className="relative w-full h-96">
+              <Image 
+                src="https://images.pexels.com/photos/5849577/pexels-photo-5849577.jpeg?auto=compress&cs=tinysrgb&w=1200" 
+                alt="Refinancing Mortgage Documents and Calculator" 
+                fill
+                className="object-cover rounded-lg shadow-md"
+                unoptimized
+                priority
+              />
+            </div>
           </div>
           
           {/* Table of Contents */}
@@ -74,10 +80,10 @@ export default function RefinancingGuidePage() {
             <section id="what-is-refinancing" className="mb-10">
               <h2 className="text-2xl font-bold mb-4">What is Mortgage Refinancing?</h2>
               <p className="mb-4">
-                Mortgage refinancing is the process of replacing your existing mortgage with a new one, typically with different terms. When you refinance, you're essentially taking out a new loan to pay off your current mortgage. The new loan may have a different interest rate, term length, or other features that differ from your original mortgage.
+                Mortgage refinancing is the process of replacing your existing mortgage with a new one, typically with different terms. When you refinance, you&apos;re essentially taking out a new loan to pay off your current mortgage. The new loan may have a different interest rate, term length, or other features that differ from your original mortgage.
               </p>
               <p className="mb-4">
-                Refinancing can be a strategic financial move if market conditions or your personal circumstances have changed since you took out your original mortgage. However, it's not always the right choice for everyone, and it comes with costs and considerations that should be carefully evaluated.
+                Refinancing can be a strategic financial move if market conditions or your personal circumstances have changed since you took out your original mortgage. However, it&apos;s not always the right choice for everyone, and it comes with costs and considerations that should be carefully evaluated.
               </p>
               <div className="bg-blue-50 p-6 rounded-lg my-6">
                 <h3 className="text-xl font-semibold text-blue-800 mb-2">Key Refinancing Statistics</h3>
@@ -156,7 +162,7 @@ export default function RefinancingGuidePage() {
               
               <div className="border-l-4 border-blue-500 pl-4 py-2 mb-6">
                 <p className="italic text-gray-700">
-                  "Refinancing is not a one-size-fits-all solution. The best refinancing strategy depends on your specific financial goals, how long you plan to stay in your home, and the current economic environment."
+                &quot;Refinancing is not a one-size-fits-all solution. The best refinancing strategy depends on your specific financial goals, how long you plan to stay in your home, and the current economic environment.&quot;
                 </p>
               </div>
             </section>
@@ -182,7 +188,7 @@ export default function RefinancingGuidePage() {
               <div className="mb-6">
                 <h3 className="text-xl font-semibold mb-3 text-blue-800">Cash-Out Refinance</h3>
                 <p className="mb-2">
-                  This option allows you to borrow more than you currently owe on your mortgage and receive the difference in cash. It's a way to tap into your home's equity while potentially adjusting your loan's terms.
+                  This option allows you to borrow more than you currently owe on your mortgage and receive the difference in cash. It&apos;s a way to tap into your home&apos;s equity while potentially adjusting your loan&apos;s terms.
                 </p>
                 <div className="bg-gray-50 p-4 rounded-lg">
                   <p className="text-sm text-gray-600">

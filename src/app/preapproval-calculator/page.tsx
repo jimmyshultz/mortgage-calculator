@@ -27,7 +27,7 @@ export default function PreapprovalCalculatorPage() {
           <div className="bg-white rounded-lg shadow-md p-8">
             <h2 className="text-2xl font-bold mb-6 text-gray-800">Understanding Mortgage Preapproval</h2>
             <p className="text-gray-600 mb-8 leading-relaxed">
-              Mortgage preapproval is an important first step in the home buying process. It gives you a clear picture of how much home you can afford and shows sellers you're a serious buyer.
+              Mortgage preapproval is an important first step in the home buying process. It gives you a clear picture of how much home you can afford and shows sellers you&apos;re a serious buyer.
             </p>
             
             <h2 className="text-2xl font-bold mb-4 text-gray-800">What Lenders Look At</h2>

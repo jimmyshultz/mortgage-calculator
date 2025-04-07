@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 
 const PreapprovalCalculator = () => {
   // State for user inputs
@@ -18,11 +18,7 @@ const PreapprovalCalculator = () => {
   const [frontEndRatio, setFrontEndRatio] = useState(0);
   const [backEndRatio, setBackEndRatio] = useState(0);
 
-  useEffect(() => {
-    calculatePreapproval();
-  }, [annualIncome, monthlyDebts, creditScore, downPayment, interestRate, loanTerm]);
-
-  const calculatePreapproval = () => {
+  const calculatePreapproval = useCallback(() => {
     // Monthly income
     const monthlyIncome = annualIncome / 12;
     
@@ -93,7 +89,11 @@ const PreapprovalCalculator = () => {
     setMonthlyPayment(monthly);
     setFrontEndRatio(actualFrontEndRatio);
     setBackEndRatio(actualBackEndRatio);
-  };
+  }, [annualIncome, monthlyDebts, creditScore, downPayment, interestRate, loanTerm]);
+
+  useEffect(() => {
+    calculatePreapproval();
+  }, [calculatePreapproval]);
 
   return (
     <div className="max-w-4xl mx-auto p-4 sm:p-6 bg-white rounded-lg shadow-lg">

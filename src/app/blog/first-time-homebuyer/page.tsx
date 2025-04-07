@@ -58,7 +58,7 @@ export default function FirstTimeHomebuyerGuide() {
             <section id="introduction" className="mb-8">
               <h2 className="text-xl sm:text-2xl font-bold text-gray-800 mb-4">Introduction to Home Buying</h2>
               <p className="mb-4">
-                Buying your first home is one of the most exciting and significant financial decisions you'll make. It's a journey 
+                Buying your first home is one of the most exciting and significant financial decisions you&apos;ll make. It&apos;s a journey 
                 that combines emotional aspects of finding a place to call your own with practical considerations about finances, 
                 location, and long-term goals.
               </p>
@@ -78,7 +78,7 @@ export default function FirstTimeHomebuyerGuide() {
             <section id="preparing" className="mb-8">
               <h2 className="text-xl sm:text-2xl font-bold text-gray-800 mb-4">Preparing Your Finances</h2>
               <p className="mb-4">
-                Before you start house hunting, it's essential to get your finances in order. Here's how to prepare:
+                Before you start house hunting, it&apos;s essential to get your finances in order. Here&apos;s how to prepare:
               </p>
               <h3 className="text-lg font-semibold mb-2 text-gray-800">Check Your Credit Score</h3>
               <p className="mb-4">
@@ -92,7 +92,7 @@ export default function FirstTimeHomebuyerGuide() {
               </p>
               <h3 className="text-lg font-semibold mb-2 text-gray-800">Save for a Down Payment</h3>
               <p className="mb-4">
-                While the traditional 20% down payment isn't always required, a larger down payment can help you avoid private mortgage 
+                While the traditional 20% down payment isn&apos;t always required, a larger down payment can help you avoid private mortgage 
                 insurance (PMI) and qualify for better loan terms. Here are some common down payment options:
               </p>
               <ul className="list-disc pl-5 mb-4 space-y-1">
@@ -118,7 +118,7 @@ export default function FirstTimeHomebuyerGuide() {
             <section id="preapproval" className="mb-8">
               <h2 className="text-xl sm:text-2xl font-bold text-gray-800 mb-4">Getting Pre-Approved for a Mortgage</h2>
               <p className="mb-4">
-                Mortgage pre-approval is a crucial step that should come before house hunting. Here's why it matters and how to get pre-approved:
+                Mortgage pre-approval is a crucial step that should come before house hunting. Here&apos;s why it matters and how to get pre-approved:
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
                 <div className="bg-gray-50 p-4 rounded-lg">
@@ -126,13 +126,13 @@ export default function FirstTimeHomebuyerGuide() {
                   <ul className="list-disc pl-4 text-sm space-y-1">
                     <li>Understand exactly how much house you can afford</li>
                     <li>Identify potential credit issues early</li>
-                    <li>Show sellers you're a serious buyer</li>
+                    <li>Show sellers you&apos;re a serious buyer</li>
                     <li>Speed up the final loan approval process</li>
                     <li>Gain negotiating leverage</li>
                   </ul>
                 </div>
                 <div className="bg-gray-50 p-4 rounded-lg">
-                  <h3 className="font-semibold text-gray-800 mb-2">What You'll Need</h3>
+                  <h3 className="font-semibold text-gray-800 mb-2">What You&apos;ll Need</h3>
                   <ul className="list-disc pl-4 text-sm space-y-1">
                     <li>Proof of income (pay stubs, W-2s, tax returns)</li>
                     <li>Employment verification</li>

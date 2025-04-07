@@ -25,7 +25,7 @@ export default function PrivacyPolicyPage() {
             <div className="prose prose-lg max-w-none">
               <h2>Introduction</h2>
               <p>
-                TheMortgageEstimator.com ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website, including any other media form, media channel, mobile website, or mobile application related or connected to TheMortgageEstimator.com.
+                TheMortgageEstimator.com (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website, including any other media form, media channel, mobile website, or mobile application related or connected to TheMortgageEstimator.com.
               </p>
               <p>
                 Please read this Privacy Policy carefully. If you do not agree with the terms of this Privacy Policy, please do not access the site.
@@ -72,7 +72,7 @@ export default function PrivacyPolicyPage() {
                 This website displays advertisements served by Google AdSense, a third-party advertising network. Google AdSense may use cookies, web beacons, and similar technologies to collect information about your activities on this and other websites to provide you with targeted advertising based on your browsing activities and interests.
               </p>
               <p>
-                Google's use of advertising cookies enables it and its partners to serve ads to you based on your visit to our site and/or other sites on the Internet. You may opt out of personalized advertising by visiting <a href="https://www.google.com/settings/ads" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer" aria-label="Google Ads Settings (opens in a new window)">Google Ads Settings</a> or by visiting <a href="https://www.aboutads.info" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer" aria-label="About Ads info page (opens in a new window)">AboutAds.info</a>.
+                Google&apos;s use of advertising cookies enables it and its partners to serve ads to you based on your visit to our site and/or other sites on the Internet. You may opt out of personalized advertising by visiting <a href="https://www.google.com/settings/ads" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer" aria-label="Google Ads Settings (opens in a new window)">Google Ads Settings</a> or by visiting <a href="https://www.aboutads.info" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer" aria-label="About Ads info page (opens in a new window)">AboutAds.info</a>.
               </p>
               <p>
                 Please note that if you opt out of personalized advertising, you will still see advertisements on our website, but they may not be as relevant to your interests.
@@ -85,7 +85,7 @@ export default function PrivacyPolicyPage() {
               <ul>
                 <li><strong>Essential Cookies:</strong> These cookies are necessary for the website to function properly.</li>
                 <li><strong>Analytics Cookies:</strong> We use Google Analytics to help us understand how visitors interact with our website. These cookies collect information about your use of the website, including the pages you visit and links you click.</li>
-                <li><strong>Advertising Cookies:</strong> Google AdSense uses cookies to make advertising more engaging to users and more valuable to publishers and advertisers. These cookies are used to remember your most recent searches, your previous interactions with an advertiser's ads or search results, and your visits to an advertiser's website.</li>
+                <li><strong>Advertising Cookies:</strong> Google AdSense uses cookies to make advertising more engaging to users and more valuable to publishers and advertisers. These cookies are used to remember your most recent searches, your previous interactions with an advertiser&apos;s ads or search results, and your visits to an advertiser&apos;s website.</li>
               </ul>
               <p>
                 You can control and manage cookies in various ways. Most web browsers allow you to manage your cookie preferences. You can:
@@ -106,7 +106,7 @@ export default function PrivacyPolicyPage() {
               <ul>
                 <li><strong>Cookies:</strong> Most web browsers are set to accept cookies by default. You can usually choose to set your browser to remove or reject browser cookies.</li>
                 <li><strong>Communications:</strong> You may opt out of receiving promotional emails from us by following the instructions in those emails.</li>
-                <li><strong>Do Not Track:</strong> Some browsers have "do not track" features that you can enable. We do our best to honor these requests when possible.</li>
+                <li><strong>Do Not Track:</strong> Some browsers have &quot;do not track&quot; features that you can enable. We do our best to honor these requests when possible.</li>
               </ul>
               
               <h2>Data Security</h2>
@@ -114,14 +114,14 @@ export default function PrivacyPolicyPage() {
                 We implement appropriate technical and organizational measures to protect the security of your personal information. However, please be aware that no method of transmission over the Internet or electronic storage is 100% secure, and we cannot guarantee absolute security.
               </p>
               
-              <h2>Children's Privacy</h2>
+              <h2>Children&apos;s Privacy</h2>
               <p>
                 Our website is not intended for children under 13 years of age. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe your child has provided us with personal information, please contact us.
               </p>
               
               <h2>Changes to This Privacy Policy</h2>
               <p>
-                We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date at the top of this page. You are advised to review this Privacy Policy periodically for any changes.
+                We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the &quot;Last Updated&quot; date at the top of this page. You are advised to review this Privacy Policy periodically for any changes.
               </p>
               
               <h2>Contact Us</h2>

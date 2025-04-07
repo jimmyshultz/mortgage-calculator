@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import ResultsDisplay from './ResultsDisplay';
 
 const Calculator = () => {
@@ -12,11 +12,7 @@ const Calculator = () => {
   const [totalPayment, setTotalPayment] = useState(0);
   const [totalInterest, setTotalInterest] = useState(0);
 
-  useEffect(() => {
-    calculateMortgage();
-  }, [loanAmount, interestRate, loanTerm, downPayment]);
-
-  const calculateMortgage = () => {
+  const calculateMortgage = useCallback(() => {
     const principal = loanAmount - downPayment;
     const monthlyRate = interestRate / 100 / 12;
     const numberOfPayments = loanTerm * 12;
@@ -38,7 +34,11 @@ const Calculator = () => {
     const calculatedTotalPayment = monthly * numberOfPayments;
     setTotalPayment(calculatedTotalPayment);
     setTotalInterest(calculatedTotalPayment - principal);
-  };
+  }, [loanAmount, interestRate, loanTerm, downPayment]);
+
+  useEffect(() => {
+    calculateMortgage();
+  }, [calculateMortgage]);
 
   return (
     <div className="max-w-4xl mx-auto p-4 sm:p-6 bg-white rounded-lg shadow-lg">

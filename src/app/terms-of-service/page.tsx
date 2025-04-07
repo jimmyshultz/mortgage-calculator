@@ -25,7 +25,7 @@ export default function TermsOfServicePage() {
             <div className="prose prose-lg max-w-none">
               <h2>1. Acceptance of Terms</h2>
               <p>
-                Welcome to TheMortgageEstimator.com. These Terms of Service ("Terms") govern your access to and use of the TheMortgageEstimator.com website and all services provided through it (collectively, the "Service"). By accessing or using the Service, you agree to be bound by these Terms. If you do not agree to these Terms, you may not access or use the Service.
+                Welcome to TheMortgageEstimator.com. These Terms of Service (&quot;Terms&quot;) govern your access to and use of the TheMortgageEstimator.com website and all services provided through it (collectively, the &quot;Service&quot;). By accessing or using the Service, you agree to be bound by these Terms. If you do not agree to these Terms, you may not access or use the Service.
               </p>
               
               <h2>2. Modifications to Terms</h2>
@@ -48,7 +48,7 @@ export default function TermsOfServicePage() {
               
               <h2>5. Disclaimer of Warranties</h2>
               <p>
-                THE SERVICE IS PROVIDED "AS IS" AND "AS AVAILABLE," WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.
+                THE SERVICE IS PROVIDED &quot;AS IS&quot; AND &quot;AS AVAILABLE,&quot; WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.
               </p>
               <p>
                 WE DO NOT WARRANT THAT THE SERVICE WILL BE UNINTERRUPTED OR ERROR-FREE, THAT DEFECTS WILL BE CORRECTED, OR THAT THE SERVICE OR THE SERVER THAT MAKES IT AVAILABLE ARE FREE OF VIRUSES OR OTHER HARMFUL COMPONENTS.
@@ -79,7 +79,7 @@ export default function TermsOfServicePage() {
                 <li>Use the Service in any way that violates any applicable laws or regulations</li>
                 <li>Impersonate any person or entity, or falsely state or misrepresent your affiliation with any person or entity</li>
                 <li>Attempt to gain unauthorized access to the Service or computer systems connected to the Service</li>
-                <li>Engage in any conduct that restricts or inhibits anyone's use or enjoyment of the Service</li>
+                <li>Engage in any conduct that restricts or inhibits anyone&apos;s use or enjoyment of the Service</li>
                 <li>Use any robot, spider, or other automatic device to access the Service for any purpose</li>
                 <li>Introduce any viruses, trojan horses, worms, or other material which is malicious or technologically harmful</li>
               </ul>
