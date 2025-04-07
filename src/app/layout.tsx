@@ -4,6 +4,7 @@ import { Inter } from 'next/font/google'
 import Script from 'next/script'
 import Link from 'next/link'
 import MobileNavigation from '../components/MobileNavigation'
+import { Analytics } from '@vercel/analytics/react'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -112,6 +113,9 @@ export default function RootLayout({
             </div>
           </div>
         </footer>
+        
+        {/* Vercel Analytics */}
+        <Analytics />
       </body>
     </html>
   );

@@ -382,21 +382,6 @@ export default function HousingMarketTrendsPage() {
               </div>
             </section>
             
-            {/* Author Bio */}
-            <div className="bg-gray-50 p-6 rounded-lg mt-12">
-              <h3 className="text-xl font-semibold mb-3">About the Author</h3>
-              <div className="flex items-center">
-                <div className="w-16 h-16 rounded-full bg-gray-300 mr-4"></div>
-                <div>
-                  <p className="font-medium">Sarah Johnson</p>
-                  <p className="text-sm text-gray-600 mb-2">Real Estate Market Analyst</p>
-                  <p className="text-sm text-gray-700">
-                    Sarah has been analyzing real estate markets for over 15 years and regularly contributes to housing market publications and research reports. She holds a master&apos;s degree in Urban Planning and Economic Development.
-                  </p>
-                </div>
-              </div>
-            </div>
-            
             {/* Related Articles */}
             <div className="mt-12">
               <h3 className="text-xl font-semibold mb-6">Related Articles</h3>
