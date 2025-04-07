@@ -30,7 +30,6 @@ export default function RootLayout({
         <Script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5443760017915120"
-          strategy="afterInteractive"
           crossOrigin="anonymous"
         />
         
