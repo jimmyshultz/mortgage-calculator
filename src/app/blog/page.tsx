@@ -12,6 +12,46 @@ export const metadata: Metadata = {
 // Blog post data
 const blogPosts = [
   {
+    id: 'mortgage-rates-2025-outlook',
+    title: 'Mortgage Rates in 2025: Outlook and Strategies',
+    date: 'August 8, 2025',
+    excerpt: 'What today\'s mortgage rate environment means for buyers and homeowners, plus practical strategies to navigate 2025.',
+    category: 'Market',
+    imageUrl: 'https://images.unsplash.com/photo-1554224154-22dec7ec8818?q=80&w=1200&auto=format&fit=crop',
+  },
+  {
+    id: 'ai-in-mortgage-underwriting-2025',
+    title: 'How AI Is Changing Mortgage Underwriting in 2025',
+    date: 'August 5, 2025',
+    excerpt: 'A plain-English look at how lenders are using AI in underwriting and what it means for approvals, timelines, and fairness.',
+    category: 'Trends',
+    imageUrl: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1200&auto=format&fit=crop',
+  },
+  {
+    id: 'down-payment-assistance-2025',
+    title: 'Down Payment Assistance Programs in 2025: What to Know',
+    date: 'July 10, 2025',
+    excerpt: 'An overview of common assistance options in 2025 and how to determine eligibility without the jargon.',
+    category: 'Programs',
+    imageUrl: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=1200&auto=format&fit=crop',
+  },
+  {
+    id: 'homebuying-checklist-2025',
+    title: 'First-Time Homebuyer Checklist for 2025',
+    date: 'June 20, 2025',
+    excerpt: 'A step-by-step, up-to-date checklist to go from browsing to closing this year.',
+    category: 'Guides',
+    imageUrl: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=1200&auto=format&fit=crop',
+  },
+  {
+    id: 'heloc-vs-home-equity-2025',
+    title: 'HELOC vs. Home Equity Loan in 2025: Which Is Better?',
+    date: 'May 5, 2025',
+    excerpt: 'Compare HELOCs and home equity loans in 2025 to decide which borrowing tool fits your needs.',
+    category: 'Finance',
+    imageUrl: 'https://images.unsplash.com/photo-1553729784-e91953dec042?q=80&w=1200&auto=format&fit=crop',
+  },
+  {
     id: 'first-time-homebuyer',
     title: 'First-Time Homebuyer Guide',
     date: 'March 15, 2025',
