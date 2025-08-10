@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   },
   verification: {
     // Replace with the actual verification code when provided by Google
-    google: 'YOUR_VERIFICATION_CODE',
+    google: 'qJxImXtWKCx0gJs07pGpujP9oAZfKXruwZcuy-sF3cY',
   },
 }
 
