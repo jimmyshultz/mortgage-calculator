@@ -102,9 +102,20 @@ const blogPosts = [
 ];
 
 export default function BlogPage() {
+  const blogJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Blog',
+    name: 'TheMortgageEstimator.com Blog',
+    url: 'https://themortgageestimator.com/blog',
+  };
+
   return (
     <main id="main-content" className="min-h-screen bg-gray-50 py-12">
       <div className="container mx-auto px-4">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(blogJsonLd) }}
+        />
         <h1 className="text-4xl font-bold text-center mb-2 text-gray-800">
           Mortgage Blog
         </h1>
@@ -122,7 +133,6 @@ export default function BlogPage() {
                   alt={blogPosts[0].title} 
                   fill
                   className="object-cover"
-                  unoptimized
                   priority
                 />
               </div>
@@ -161,7 +171,6 @@ export default function BlogPage() {
                     alt={post.title} 
                     fill
                     className="object-cover transition-transform duration-500 hover:scale-110"
-                    unoptimized
                   />
                 </div>
                 <div className="p-6 flex-grow">

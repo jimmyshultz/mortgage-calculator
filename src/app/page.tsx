@@ -9,9 +9,25 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
+  const websiteJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'TheMortgageEstimator.com',
+    url: 'https://themortgageestimator.com/',
+    potentialAction: {
+      '@type': 'SearchAction',
+      target: 'https://themortgageestimator.com/search?q={search_term_string}',
+      'query-input': 'required name=search_term_string',
+    },
+  };
+
   return (
     <main id="main-content" className="min-h-screen bg-gray-50 py-12">
       <div className="container mx-auto px-4">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
+        />
         <h1 className="text-4xl font-bold text-center mb-2 text-gray-800">
           Mortgage Calculator
         </h1>

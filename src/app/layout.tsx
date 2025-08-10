@@ -9,9 +9,35 @@ import { Analytics } from '@vercel/analytics/react'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://themortgageestimator.com'),
   title: 'Mortgage Calculator - Plan Your Home Financing',
   description: 'Free online mortgage calculator to help plan your home financing. Calculate monthly payments and see amortization schedules.',
   keywords: 'mortgage calculator, home loan calculator, mortgage payment, home financing',
+  alternates: {
+    canonical: '/',
+  },
+  openGraph: {
+    title: 'Mortgage Calculator - Plan Your Home Financing',
+    description: 'Free online mortgage calculator to help plan your home financing. Calculate monthly payments and see amortization schedules.',
+    url: '/',
+    siteName: 'TheMortgageEstimator.com',
+    type: 'website',
+    locale: 'en_US',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Mortgage Calculator - Plan Your Home Financing',
+    description: 'Free online mortgage calculator to help plan your home financing. Calculate monthly payments and see amortization schedules.',
+    creator: '@themortgageest',
+  },
+  icons: {
+    icon: [
+      { url: '/favicon.ico' },
+    ],
+    apple: [
+      { url: '/apple-touch-icon.png', sizes: '180x180' },
+    ],
+  },
   verification: {
     // Replace with the actual verification code when provided by Google
     google: 'google-site-verification=YOUR_VERIFICATION_CODE',
