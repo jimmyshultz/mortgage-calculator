@@ -7,9 +7,36 @@ export const metadata: Metadata = {
   title: 'Understanding Different Types of Mortgages | TheMortgageEstimator.com',
   description: 'Compare fixed-rate, adjustable-rate, FHA, VA, and other mortgage types to find the best option for your home purchase.',
   keywords: 'mortgage types, fixed-rate mortgage, adjustable-rate mortgage, FHA loan, VA loan, USDA loan, conventional loan',
+  alternates: {
+    canonical: '/blog/mortgage-types',
+  },
 };
 
 export default function MortgageTypesPage() {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: 'Understanding Different Types of Mortgages',
+    datePublished: '2025-01-22',
+    dateModified: '2025-01-22',
+    author: {
+      '@type': 'Organization',
+      name: 'TheMortgageEstimator.com',
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'TheMortgageEstimator.com',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://themortgageestimator.com/apple-touch-icon.png',
+      },
+    },
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': 'https://themortgageestimator.com/blog/mortgage-types',
+    },
+  };
+
   return (
     <main className="min-h-screen bg-gray-50 py-12">
       <div className="container mx-auto px-4">
@@ -25,6 +52,7 @@ export default function MortgageTypesPage() {
           
           {/* Article Header */}
           <div className="mb-10">
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
             <h1 className="text-4xl font-bold text-gray-800 mb-4">
               Understanding Different Types of Mortgages
             </h1>
@@ -41,7 +69,6 @@ export default function MortgageTypesPage() {
                 alt="Types of Mortgages" 
                 fill
                 className="object-cover rounded-lg shadow-md"
-                unoptimized
                 priority
               />
             </div>

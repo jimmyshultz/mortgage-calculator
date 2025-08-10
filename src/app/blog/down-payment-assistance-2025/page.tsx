@@ -7,9 +7,36 @@ export const metadata: Metadata = {
   title: 'Down Payment Assistance Programs in 2025 | TheMortgageEstimator.com',
   description: 'Understand common down payment assistance options in 2025, how eligibility works, and what to ask lenders and local agencies.',
   keywords: 'down payment assistance 2025, DPA programs 2025, first-time buyer assistance 2025',
+  alternates: {
+    canonical: '/blog/down-payment-assistance-2025',
+  },
 };
 
 export default function DPA2025Page() {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: 'Down Payment Assistance Programs in 2025: What to Know',
+    datePublished: '2025-07-10',
+    dateModified: '2025-07-10',
+    author: {
+      '@type': 'Organization',
+      name: 'TheMortgageEstimator.com',
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'TheMortgageEstimator.com',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://themortgageestimator.com/apple-touch-icon.png',
+      },
+    },
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': 'https://themortgageestimator.com/blog/down-payment-assistance-2025',
+    },
+  };
+
   return (
     <main className="min-h-screen bg-gray-50 py-12">
       <div className="container mx-auto px-4">
@@ -25,6 +52,7 @@ export default function DPA2025Page() {
 
           {/* Article Header */}
           <div className="mb-10">
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
             <h1 className="text-4xl font-bold text-gray-800 mb-4">
               Down Payment Assistance Programs in 2025: What to Know
             </h1>
@@ -41,7 +69,6 @@ export default function DPA2025Page() {
                 alt="Coins in a jar labeled down payment" 
                 fill
                 className="object-cover rounded-lg shadow-md"
-                unoptimized
                 priority
               />
             </div>

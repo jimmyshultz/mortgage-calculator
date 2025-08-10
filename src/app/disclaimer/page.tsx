@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: 'Disclaimer | TheMortgageEstimator.com',
   description: 'Important disclaimer information regarding the use of TheMortgageEstimator.com mortgage calculator and website.',
   keywords: 'disclaimer, mortgage calculator disclaimer, financial information disclaimer',
+  alternates: {
+    canonical: '/disclaimer',
+  },
 };
 
 export default function DisclaimerPage() {

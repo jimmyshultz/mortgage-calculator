@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: 'About TheMortgageEstimator.com - Our Mission and Purpose',
   description: 'Learn about TheMortgageEstimator.com, a free mortgage calculator designed to help homebuyers make informed financing decisions.',
   keywords: 'about mortgage calculator, mortgage estimator, mortgage tools, home loan calculator',
+  alternates: {
+    canonical: '/about',
+  },
 };
 
 export default function AboutPage() {

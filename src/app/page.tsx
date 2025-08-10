@@ -6,12 +6,58 @@ export const metadata: Metadata = {
   title: 'Mortgage Calculator - Plan Your Home Loan',
   description: 'Free mortgage calculator to help you plan your home loan. Calculate monthly payments, interest rates, and see exactly what your mortgage will cost you.',
   keywords: 'mortgage calculator, home loan calculator, mortgage payment calculator, house payment calculator',
+  alternates: {
+    canonical: '/',
+  },
 };
 
 export default function Home() {
+  const websiteJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'TheMortgageEstimator.com',
+    url: 'https://themortgageestimator.com/',
+    potentialAction: {
+      '@type': 'SearchAction',
+      target: 'https://themortgageestimator.com/search?q={search_term_string}',
+      'query-input': 'required name=search_term_string',
+    },
+  };
+
+  const faqJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'How is my monthly mortgage payment calculated?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Monthly payment includes principal and interest using the amortization formula, plus estimated taxes, insurance, and possibly PMI based on your inputs.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What down payment do I need?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Conventional loans can go as low as 3–5% down; FHA 3.5%; VA and USDA may allow 0% for eligible borrowers. Putting 20% down can avoid PMI.',
+        },
+      },
+    ],
+  };
+
   return (
     <main id="main-content" className="min-h-screen bg-gray-50 py-12">
       <div className="container mx-auto px-4">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
         <h1 className="text-4xl font-bold text-center mb-2 text-gray-800">
           Mortgage Calculator
         </h1>

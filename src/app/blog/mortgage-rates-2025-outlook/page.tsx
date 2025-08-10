@@ -7,9 +7,36 @@ export const metadata: Metadata = {
   title: 'Mortgage Rates in 2025: Outlook and Strategies | TheMortgageEstimator.com',
   description: "What today's mortgage rate environment means for buyers and homeowners in 2025, plus practical strategies to navigate it.",
   keywords: 'mortgage rates 2025, mortgage outlook 2025, interest rates 2025, home loan rates 2025',
+  alternates: {
+    canonical: '/blog/mortgage-rates-2025-outlook',
+  },
 };
 
 export default function MortgageRates2025OutlookPage() {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: 'Mortgage Rates in 2025: Outlook and Strategies',
+    datePublished: '2025-08-08',
+    dateModified: '2025-08-08',
+    author: {
+      '@type': 'Organization',
+      name: 'TheMortgageEstimator.com',
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'TheMortgageEstimator.com',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://themortgageestimator.com/apple-touch-icon.png',
+      },
+    },
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': 'https://themortgageestimator.com/blog/mortgage-rates-2025-outlook',
+    },
+  };
+
   return (
     <main className="min-h-screen bg-gray-50 py-12">
       <div className="container mx-auto px-4">
@@ -25,6 +52,7 @@ export default function MortgageRates2025OutlookPage() {
 
           {/* Article Header */}
           <div className="mb-10">
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
             <h1 className="text-4xl font-bold text-gray-800 mb-4">
               Mortgage Rates in 2025: Outlook and Strategies
             </h1>
@@ -41,7 +69,6 @@ export default function MortgageRates2025OutlookPage() {
                 alt="Interest rate chart and home icon" 
                 fill
                 className="object-cover rounded-lg shadow-md"
-                unoptimized
                 priority
               />
             </div>

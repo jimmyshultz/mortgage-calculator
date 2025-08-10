@@ -5,11 +5,38 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Current Housing Market Trends and Predictions | TheMortgageEstimator.com',
-  description: 'Analysis of today&apos;s housing market conditions and expert predictions on where the market is heading for potential homebuyers and sellers.',
+  description: 'Analysis of today\'s housing market conditions and expert predictions on where the market is heading for potential homebuyers and sellers.',
   keywords: 'housing market trends, real estate market analysis, housing market predictions, home buying market, real estate forecast',
+  alternates: {
+    canonical: '/blog/housing-market-trends',
+  },
 };
 
 export default function HousingMarketTrendsPage() {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: 'Current Housing Market Trends and Predictions',
+    datePublished: '2024-04-18',
+    dateModified: '2025-03-01',
+    author: {
+      '@type': 'Organization',
+      name: 'TheMortgageEstimator.com',
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'TheMortgageEstimator.com',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://themortgageestimator.com/apple-touch-icon.png',
+      },
+    },
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': 'https://themortgageestimator.com/blog/housing-market-trends',
+    },
+  };
+
   return (
     <main className="min-h-screen bg-gray-50 py-12">
       <div className="container mx-auto px-4">
@@ -25,6 +52,7 @@ export default function HousingMarketTrendsPage() {
           
           {/* Article Header */}
           <div className="mb-10">
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
             <h1 className="text-4xl font-bold text-gray-800 mb-4">
               Current Housing Market Trends and Predictions
             </h1>
@@ -41,7 +69,6 @@ export default function HousingMarketTrendsPage() {
                 alt="Housing Market Graph" 
                 fill
                 className="object-cover rounded-lg shadow-md"
-                unoptimized
                 priority
               />
             </div>

@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: 'Terms of Service | TheMortgageEstimator.com',
   description: 'Our terms of service outline the rules, guidelines, and legal terms that govern your use of TheMortgageEstimator.com.',
   keywords: 'terms of service, terms and conditions, legal terms, mortgage calculator terms',
+  alternates: {
+    canonical: '/terms-of-service',
+  },
 };
 
 export default function TermsOfServicePage() {

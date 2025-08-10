@@ -6,9 +6,36 @@ export const metadata: Metadata = {
   title: 'First-Time Homebuyer Checklist for 2025 | TheMortgageEstimator.com',
   description: 'A concise, up-to-date checklist to go from browsing to closing in 2025: budgeting, pre-approval, home search, and closing steps.',
   keywords: 'homebuyer checklist 2025, first-time homebuyer 2025, buy a home 2025',
+  alternates: {
+    canonical: '/blog/homebuying-checklist-2025',
+  },
 };
 
 export default function HomebuyerChecklist2025Page() {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: 'First-Time Homebuyer Checklist for 2025',
+    datePublished: '2025-06-20',
+    dateModified: '2025-06-20',
+    author: {
+      '@type': 'Organization',
+      name: 'TheMortgageEstimator.com',
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'TheMortgageEstimator.com',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://themortgageestimator.com/apple-touch-icon.png',
+      },
+    },
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': 'https://themortgageestimator.com/blog/homebuying-checklist-2025',
+    },
+  };
+
   return (
     <main className="min-h-screen bg-gray-50 py-12">
       <div className="container mx-auto px-4">
@@ -26,6 +53,7 @@ export default function HomebuyerChecklist2025Page() {
 
           <article className="bg-white rounded-lg shadow-md p-8">
             <header className="mb-8">
+              <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
               <h1 className="text-4xl font-bold text-gray-900 mb-4">First-Time Homebuyer Checklist for 2025</h1>
               <div className="flex items-center text-sm text-gray-500 mb-4">
                 <span>Published: June 20, 2025</span>

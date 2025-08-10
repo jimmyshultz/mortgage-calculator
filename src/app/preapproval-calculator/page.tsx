@@ -6,12 +6,39 @@ export const metadata: Metadata = {
   title: 'Mortgage Preapproval Calculator - Estimate How Much You Can Borrow',
   description: 'Use our mortgage preapproval calculator to estimate how much house you can afford based on your income, debts, credit score, and down payment.',
   keywords: 'mortgage preapproval calculator, home loan prequalification, how much can I borrow, mortgage affordability, debt-to-income ratio',
+  alternates: {
+    canonical: '/preapproval-calculator',
+  },
 };
 
 export default function PreapprovalCalculatorPage() {
+  const faqJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'How much can I get preapproved for?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Lenders typically allow 28–31% of gross income for housing and 36–43% for total debts. Use the calculator to estimate based on your income, debts, credit score, and down payment.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What DTI ratio do lenders use?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Front-end DTI is often targeted at 28% and back-end at 36–43%, depending on loan type and credit profile.',
+        },
+      },
+    ],
+  };
+
   return (
     <main className="min-h-screen bg-gray-50 py-12">
       <div className="container mx-auto px-4">
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
         <h1 className="text-4xl font-bold text-center mb-2 text-gray-800">
           Mortgage Preapproval Calculator
         </h1>

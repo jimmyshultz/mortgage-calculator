@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: 'Privacy Policy | TheMortgageEstimator.com',
   description: 'Our privacy policy explains how we collect, use, and protect your personal information when you use TheMortgageEstimator.com.',
   keywords: 'privacy policy, data protection, mortgage calculator privacy',
+  alternates: {
+    canonical: '/privacy-policy',
+  },
 };
 
 export default function PrivacyPolicyPage() {
