@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: 'Mortgage Blog - Guides & Resources | TheMortgageEstimator.com',
   description: 'Explore articles, guides, and expert advice on mortgages, home buying, refinancing, and more from TheMortgageEstimator.com.',
   keywords: 'mortgage blog, mortgage advice, home buying tips, mortgage calculator blog, refinancing guides',
+  alternates: {
+    canonical: '/blog',
+  },
 };
 
 // Blog post data

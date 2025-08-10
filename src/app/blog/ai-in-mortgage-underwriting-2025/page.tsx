@@ -7,9 +7,36 @@ export const metadata: Metadata = {
   title: 'How AI Is Changing Mortgage Underwriting in 2025 | TheMortgageEstimator.com',
   description: 'A plain-English look at how lenders are using AI in underwriting and what it means for approvals, timelines, and fairness in 2025.',
   keywords: 'AI mortgage underwriting 2025, automated underwriting, mortgage technology 2025',
+  alternates: {
+    canonical: '/blog/ai-in-mortgage-underwriting-2025',
+  },
 };
 
 export default function AIMortgageUnderwriting2025Page() {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: 'How AI Is Changing Mortgage Underwriting in 2025',
+    datePublished: '2025-08-05',
+    dateModified: '2025-08-05',
+    author: {
+      '@type': 'Organization',
+      name: 'TheMortgageEstimator.com',
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'TheMortgageEstimator.com',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://themortgageestimator.com/apple-touch-icon.png',
+      },
+    },
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': 'https://themortgageestimator.com/blog/ai-in-mortgage-underwriting-2025',
+    },
+  };
+
   return (
     <main className="min-h-screen bg-gray-50 py-12">
       <div className="container mx-auto px-4">
@@ -25,6 +52,7 @@ export default function AIMortgageUnderwriting2025Page() {
 
           {/* Article Header */}
           <div className="mb-10">
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
             <h1 className="text-4xl font-bold text-gray-800 mb-4">
               How AI Is Changing Mortgage Underwriting in 2025
             </h1>
@@ -41,7 +69,6 @@ export default function AIMortgageUnderwriting2025Page() {
                 alt="Abstract AI circuitry" 
                 fill
                 className="object-cover rounded-lg shadow-md"
-                unoptimized
                 priority
               />
             </div>

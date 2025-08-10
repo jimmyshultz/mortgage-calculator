@@ -7,9 +7,36 @@ export const metadata: Metadata = {
   title: '5 Strategies to Improve Your Credit Score Before Applying for a Mortgage | TheMortgageEstimator.com',
   description: 'Learn effective strategies to boost your credit score before applying for a mortgage to qualify for better interest rates and loan terms.',
   keywords: 'credit score improvement, mortgage application, better interest rates, credit repair, mortgage qualification',
+  alternates: {
+    canonical: '/blog/credit-score-improvement',
+  },
 };
 
 export default function CreditScoreImprovementPage() {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: '5 Strategies to Improve Your Credit Score Before Applying for a Mortgage',
+    datePublished: '2024-08-12',
+    dateModified: '2024-08-12',
+    author: {
+      '@type': 'Organization',
+      name: 'TheMortgageEstimator.com',
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'TheMortgageEstimator.com',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://themortgageestimator.com/apple-touch-icon.png',
+      },
+    },
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': 'https://themortgageestimator.com/blog/credit-score-improvement',
+    },
+  };
+
   return (
     <main className="min-h-screen bg-gray-50 py-12">
       <div className="container mx-auto px-4">
@@ -25,6 +52,7 @@ export default function CreditScoreImprovementPage() {
           
           {/* Article Header */}
           <div className="mb-10">
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
             <h1 className="text-4xl font-bold text-gray-800 mb-4">
               5 Strategies to Improve Your Credit Score Before Applying for a Mortgage
             </h1>

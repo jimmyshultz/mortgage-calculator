@@ -7,9 +7,36 @@ export const metadata: Metadata = {
   title: 'Down Payment Options: How Much Should You Put Down? | TheMortgageEstimator.com',
   description: 'Explore different down payment options for your mortgage, from no-down-payment loans to the traditional 20%. Learn the pros and cons of each approach.',
   keywords: 'down payment options, mortgage down payment, 20 percent down, low down payment, down payment assistance, no down payment mortgage',
+  alternates: {
+    canonical: '/blog/down-payment-options',
+  },
 };
 
 export default function DownPaymentOptionsPage() {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: 'Down Payment Options: How Much Should You Put Down?',
+    datePublished: '2024-06-03',
+    dateModified: '2024-06-03',
+    author: {
+      '@type': 'Organization',
+      name: 'TheMortgageEstimator.com',
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'TheMortgageEstimator.com',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://themortgageestimator.com/apple-touch-icon.png',
+      },
+    },
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': 'https://themortgageestimator.com/blog/down-payment-options',
+    },
+  };
+
   return (
     <main className="min-h-screen bg-gray-50 py-12">
       <div className="container mx-auto px-4">
@@ -25,6 +52,7 @@ export default function DownPaymentOptionsPage() {
           
           {/* Article Header */}
           <div className="mb-10">
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
             <h1 className="text-4xl font-bold text-gray-800 mb-4">
               Down Payment Options: How Much Should You Put Down?
             </h1>
@@ -41,7 +69,6 @@ export default function DownPaymentOptionsPage() {
                 alt="Money and House Model Representing Down Payment" 
                 fill
                 className="object-cover rounded-lg shadow-md"
-                unoptimized
                 priority
               />
             </div>

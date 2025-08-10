@@ -7,9 +7,36 @@ export const metadata: Metadata = {
   title: 'The Complete Guide to Refinancing Your Home | TheMortgageEstimator.com',
   description: 'Learn when and how to refinance your mortgage to save money or access home equity. Understand the process, costs, and benefits of refinancing.',
   keywords: 'mortgage refinancing, home refinance, refinance guide, cash-out refinance, refinance process, refinance costs',
+  alternates: {
+    canonical: '/blog/refinancing-guide',
+  },
 };
 
 export default function RefinancingGuidePage() {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: 'The Complete Guide to Refinancing Your Home',
+    datePublished: '2024-11-10',
+    dateModified: '2024-11-10',
+    author: {
+      '@type': 'Organization',
+      name: 'TheMortgageEstimator.com',
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'TheMortgageEstimator.com',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://themortgageestimator.com/apple-touch-icon.png',
+      },
+    },
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': 'https://themortgageestimator.com/blog/refinancing-guide',
+    },
+  };
+
   return (
     <main className="min-h-screen bg-gray-50 py-12">
       <div className="container mx-auto px-4">
@@ -25,6 +52,7 @@ export default function RefinancingGuidePage() {
           
           {/* Article Header */}
           <div className="mb-10">
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
             <h1 className="text-4xl font-bold text-gray-800 mb-4">
               The Complete Guide to Refinancing Your Home
             </h1>
@@ -41,7 +69,6 @@ export default function RefinancingGuidePage() {
                 alt="Refinancing Mortgage Documents and Calculator" 
                 fill
                 className="object-cover rounded-lg shadow-md"
-                unoptimized
                 priority
               />
             </div>

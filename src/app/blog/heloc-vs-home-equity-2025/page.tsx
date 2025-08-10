@@ -7,9 +7,36 @@ export const metadata: Metadata = {
   title: 'HELOC vs. Home Equity Loan in 2025: Which Is Better? | TheMortgageEstimator.com',
   description: 'Compare HELOCs and home equity loans in 2025, including rate structures, use cases, pros and cons, and decision tips.',
   keywords: 'HELOC 2025, home equity loan 2025, HELOC vs home equity 2025',
+  alternates: {
+    canonical: '/blog/heloc-vs-home-equity-2025',
+  },
 };
 
 export default function HelocVsHomeEquity2025Page() {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: 'HELOC vs. Home Equity Loan in 2025: Which Is Better?',
+    datePublished: '2025-05-05',
+    dateModified: '2025-05-05',
+    author: {
+      '@type': 'Organization',
+      name: 'TheMortgageEstimator.com',
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'TheMortgageEstimator.com',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://themortgageestimator.com/apple-touch-icon.png',
+      },
+    },
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': 'https://themortgageestimator.com/blog/heloc-vs-home-equity-2025',
+    },
+  };
+
   return (
     <main className="min-h-screen bg-gray-50 py-12">
       <div className="container mx-auto px-4">
@@ -25,6 +52,7 @@ export default function HelocVsHomeEquity2025Page() {
 
           {/* Header */}
           <div className="mb-10">
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
             <h1 className="text-4xl font-bold text-gray-800 mb-4">HELOC vs. Home Equity Loan in 2025: Which Is Better?</h1>
             <div className="flex items-center text-gray-600 text-sm mb-6">
               <span>Published: May 5, 2025</span>
@@ -39,7 +67,6 @@ export default function HelocVsHomeEquity2025Page() {
                 alt="House with equity graph overlay" 
                 fill
                 className="object-cover rounded-lg shadow-md"
-                unoptimized
                 priority
               />
             </div>

@@ -6,9 +6,36 @@ export const metadata: Metadata = {
   title: 'Complete Guide for First-Time Homebuyers | TheMortgageEstimator.com',
   description: 'Everything first-time homebuyers need to know about mortgages, from pre-approval to closing. Learn about financing options, house hunting, and more.',
   keywords: 'first-time homebuyer, mortgage guide, home buying process, mortgage pre-approval, house hunting tips',
+  alternates: {
+    canonical: '/blog/first-time-homebuyer',
+  },
 };
 
 export default function FirstTimeHomebuyerGuide() {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: 'The Complete Guide for First-Time Homebuyers',
+    datePublished: '2023-06-15',
+    dateModified: '2023-06-15',
+    author: {
+      '@type': 'Organization',
+      name: 'TheMortgageEstimator.com',
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'TheMortgageEstimator.com',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://themortgageestimator.com/apple-touch-icon.png',
+      },
+    },
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': 'https://themortgageestimator.com/blog/first-time-homebuyer',
+    },
+  };
+
   return (
     <main id="main-content" className="min-h-screen bg-gray-50 py-8 sm:py-12">
       <div className="container mx-auto px-4">
@@ -26,6 +53,7 @@ export default function FirstTimeHomebuyerGuide() {
         <article className="bg-white rounded-lg shadow-md p-4 sm:p-8 max-w-4xl mx-auto">
           {/* Article Header */}
           <header className="mb-6 sm:mb-8">
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
             <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">
               The Complete Guide for First-Time Homebuyers
             </h1>

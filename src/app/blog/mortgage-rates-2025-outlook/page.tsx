@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: 'Mortgage Rates in 2025: Outlook and Strategies | TheMortgageEstimator.com',
   description: "What today's mortgage rate environment means for buyers and homeowners in 2025, plus practical strategies to navigate it.",
   keywords: 'mortgage rates 2025, mortgage outlook 2025, interest rates 2025, home loan rates 2025',
+  alternates: {
+    canonical: '/blog/mortgage-rates-2025-outlook',
+  },
 };
 
 export default function MortgageRates2025OutlookPage() {
