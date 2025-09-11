@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
-import { getMockMortgageRates, formatRateChange } from '../../lib/mortgage-rates'
+import Link from 'next/link'
+import { fetchMortgageRates, formatRateChange } from '../../lib/mortgage-rates'
 
 export const metadata: Metadata = {
   title: 'Current Mortgage Rates - Daily Updates | TheMortgageEstimator.com',
@@ -17,10 +18,9 @@ export const metadata: Metadata = {
   },
 }
 
-export default function MortgageRatesPage() {
-  // TODO: Replace with real API call - use fetchMortgageRates() for production
-  // const mortgageRates = await fetchMortgageRates();
-  const mortgageRates = getMockMortgageRates();
+export default async function MortgageRatesPage() {
+  // Fetch real mortgage rates from FRED API
+  const mortgageRates = await fetchMortgageRates();
   return (
     <main id="main-content" className="container mx-auto px-4 py-8">
       {/* Header Section */}
@@ -33,6 +33,11 @@ export default function MortgageRatesPage() {
         </p>
         <div className="mt-4 text-sm text-gray-500">
           Last Updated: {mortgageRates.lastUpdated}
+          {mortgageRates.source && (
+            <div className="mt-1">
+              Data Source: {mortgageRates.source}
+            </div>
+          )}
         </div>
       </div>
 
@@ -152,12 +157,12 @@ export default function MortgageRatesPage() {
         <p className="text-lg mb-6 text-blue-100">
           Use our mortgage calculator to estimate your monthly payments based on current rates.
         </p>
-        <a 
+        <Link 
           href="/" 
           className="inline-block bg-white text-blue-900 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors"
         >
           Calculate My Mortgage
-        </a>
+        </Link>
       </div>
 
       {/* Disclaimer */}
