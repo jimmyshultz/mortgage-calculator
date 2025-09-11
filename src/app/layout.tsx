@@ -91,6 +91,7 @@ export default function RootLayout({
             <nav className="hidden md:block">
               <ul className="flex space-x-6">
                 <li><Link href="/" className="hover:text-blue-200">Home</Link></li>
+                <li><Link href="/mortgage-rates" className="hover:text-blue-200">Rates</Link></li>
                 <li><Link href="/preapproval-calculator" className="hover:text-blue-200">Preapproval</Link></li>
                 <li><Link href="/about" className="hover:text-blue-200">About</Link></li>
                 <li><Link href="/blog" className="hover:text-blue-200">Blog</Link></li>
